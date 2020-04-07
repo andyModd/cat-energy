@@ -21,7 +21,7 @@
     </header>
 
     <main class="main">
-      <h1 class="main__title main-title">Подбор программы</h1>
+      <h1 class="main__title">Подбор программы</h1>
       <p class="main__about-form">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="main__form form" action="https://echo.htmlacademy.ru" method="post">
 
@@ -52,8 +52,8 @@
         <fieldset class="form__owner-info owner-info">
           <h2 class="owner-info__title main-title main-title--theme-accent">Контактные данные (владельца кота)</h2>
           <ul class="owner-info__list owner-info-list">
-            <li class="owner-info-list__item"><label class="owner-info-list__title">E-mail:*<input class="owner-info-list__input" type="text" name="email"></label></li>
-            <li class="owner-info-list__item"><label class="owner-info-list__title">Телефон:*<input class="owner-info-list__input" type="text" name="tel"></label></li>
+            <li class="owner-info-list__item"><label class="owner-info-list__title">E-mail:*<input class="owner-info-list__input" type="email" name="email"></label></li>
+            <li class="owner-info-list__item"><label class="owner-info-list__title">Телефон:*<input class="owner-info-list__input" type="tel" name="tel"></label></li>
           </ul>
         </fieldset>
 
@@ -83,7 +83,9 @@
         <button class="form__link link" type="submit">Отправить заявку</button>
         <p class="form__required">* — Обязательные поля</p>
       </form>
+    </main>
 
+    <footer class="footer">
       <section class="main__on-map on-map">
         <h2 class="on-map__title visually-hidden">Кэт Энерджи на карте</h2>
         <div class="on-map__wrapper">
@@ -92,9 +94,7 @@
         </div>
         <img class="on-map__img" src="https://via.placeholder.com/150x150" width="320" height="400" alt="Кэт Энерджи на карте">
       </section>
-    </main>
 
-    <footer class="footer">
       <a class="footer__logo" href="index.html">
         <img class="footer__logo-img logo-img logo-img--resize" src="https://via.placeholder.com/150x150" width="128" height="24" alt="Логотип сайта Кэт Энерджи">
       </a>

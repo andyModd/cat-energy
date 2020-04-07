@@ -22,7 +22,7 @@
     </header>
 
     <main class="main">
-      <h1 class="main__title main-title main-title--invert">Функциональное питание для котов</h1>
+      <h1 class="main__title main-title--invert">Функциональное питание для котов</h1>
       <p class="main__slogan">Занялся собой? Займись котом!</p>
       <img class="main__image" src="https://via.placeholder.com/150x150" width="280" height="270" alt="Изображение продукта Кэт Энерджи">
       <a class="main__link link" href="form.html">Подобрать программу</a>
@@ -30,23 +30,23 @@
       <section class="main__food-types food-types">
         <h2 class="food-types__title visually-hidden">Виды корма для котов</h2>
 
-        <section class="food-types__item">
-          <h3 class="food-types__subtitle">Похудение</h3>
-          <p class="food-types__about certain-paragraph">
+        <article class="food-types__item type-of-food">
+          <h3 class="type-of-food__title">Похудение</h3>
+          <p class="type-of-food__about certain-paragraph">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="food-types__link" href="catalog.html#slim">Каталог Slim</a>
-        </section>
+          <a class="type-of-food__link" href="catalog.html#slim">Каталог Slim</a>
+        </article>
 
-        <section class="food-types__item food-types__item--theme-fat">
-          <h3 class="food-types__subtitle">Набор массы</h3>
-          <p class="food-types__about certain-paragraph">
+        <article class="food-types__item type-of-food type-of-food--theme-fat">
+          <h3 class="type-of-food__title">Набор массы</h3>
+          <p class="type-of-food__about certain-paragraph">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="food-types__link" href="catalog.html#pro">Каталог Pro</a>
-        </section>
+          <a class="type-of-food__link" href="catalog.html#pro">Каталог Pro</a>
+        </article>
       </section>
 
       <section class="main__about-food about-food">
@@ -56,7 +56,6 @@
           <li class="about-food__item">
             Функциональное питание содержит только полезные питательные вещества.
           </li>
-          <!--Я не представляю, как тут можно привязать модификатор к его функции-->
           <li class="about-food__item about-food__item--theme-boil">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
@@ -83,7 +82,7 @@
             <p class="wrapper__paragraph">5 кг</p>
           </div>
           <div class="result__wrapper wrapper">
-            <p class="wrapper__title">затрачено времени</div>
+            <p class="wrapper__title">затрачено времени</p>
             <p class="wrapper__paragraph">60 дней</p>
           </div>
           <p class="result__paragraph">Затраты на питание: 15 000 руб.</p>
@@ -92,15 +91,17 @@
           <img class="slider__img" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фотография кота Бориса">
           <img class="slider__img" src="https://via.placeholder.com/150x150" width="311" height="232" alt="Фотография кота Бориса">
           <div class="slider__switch">
-            <a class="slider__link" href="#">Было</a>
+            <button class="slider__button" type="button" href="#">Было</button>
             <div class="slider__track track">
               <div class="track__thumb"></div>
             </div>
-            <a class="slider__link" href="#">Стало</a>
+            <button class="slider__button" type="button" href="#">Стало</button>
           </div>
         </div>
       </section>
+    </main>
 
+    <footer class="footer">
       <section class="main__on-map on-map">
         <h2 class="on-map__title visually-hidden">Кэт Энерджи на карте</h2>
         <div class="on-map__wrapper  on-map__wrapper--theme-light">
@@ -110,9 +111,6 @@
         <img class="on-map__img" src="https://via.placeholder.com/150x150" width="320" height="400" alt="Кэт Энерджи на карте">
       </section>
 
-    </main>
-
-    <footer class="footer">
       <a class="footer__logo">
         <img class="footer__logo-img logo-img logo-img--resize" src="https://via.placeholder.com/150x150" width="128" height="24" alt="Логотип сайта Кэт Энерджи">
       </a>
