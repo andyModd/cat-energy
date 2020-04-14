@@ -1,0 +1,9 @@
+.food-card {
+  @include text(12px, 16px);
+}
+
+.food-card__name {
+  @include text(16px, 20px);
+  color: $black;
+  text-transform: uppercase;
+}

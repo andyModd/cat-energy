@@ -4,7 +4,11 @@
   text-align: center;
 
   background: $white url('../img/index-background-mobile@1x.jpg') no-repeat;
-  /*outline: 1px solid blue;*/
+  outline: 1px solid blue;
+
+  &--theme-light {
+    background: $white;
+  }
 }
 
 .main__title {
