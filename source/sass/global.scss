@@ -1,0 +1,16 @@
+body {
+  width: 320px;
+  margin: auto;
+
+  font-family: $default-font;
+  @include text(14px, 18px);
+  font-weight: 400;
+  color: $black-lighten;
+
+  background-color: $white-desaturate;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

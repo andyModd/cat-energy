@@ -1,0 +1,23 @@
+.main {
+  padding-top: 27px;
+
+  text-align: center;
+
+  background: $white url('../img/index-background-mobile@1x.jpg') no-repeat;
+  /*outline: 1px solid blue;*/
+}
+
+.main__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @include text(36px, 36px);
+  font-weight: 400;
+  color: $white;
+}
+
+.main__slogan {
+  @include text(14px, 14px);
+  color: $white;
+  text-transform: uppercase;
+}
