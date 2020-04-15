@@ -5,9 +5,9 @@ body {
   font-family: $default-font;
   @include text(14px, 18px);
   font-weight: 400;
-  color: $black-lighten;
+  color: $black-light;
 
-  background-color: $white-desaturate;
+  background-color: $gray-light;
 }
 
 a {
