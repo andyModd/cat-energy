@@ -8,6 +8,11 @@
   text-transform: uppercase;
   color: $white;
 
-  background-color: $green;
+  background-color: $button-green;
+
+  &--theme-gray {
+    background-color: $button-gray;
+    color: $black-lightest;
+  }
 
 }

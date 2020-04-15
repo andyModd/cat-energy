@@ -1,0 +1,5 @@
+.title {
+  @include text(24px, 24px);
+  color: $black;
+  text-align: left;
+}

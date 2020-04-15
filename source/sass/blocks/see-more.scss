@@ -1,0 +1,10 @@
+.see-more__paragraph {
+  @include text(16px, 20px);
+  color: $black;
+  text-transform: uppercase;
+}
+
+.see-more__info {
+  font-family: $secondary-font;
+  @include text(12px, 16px);
+}

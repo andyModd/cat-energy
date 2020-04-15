@@ -1,0 +1,10 @@
+.extra-card__name {
+  @include text(16px, 16px);
+  color: $black-light;
+  text-transform: uppercase;
+}
+
+.extra-card__info {
+  @include text(14px, 14px);
+  color: $black-lightest;
+}

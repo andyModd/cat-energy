@@ -1,0 +1,4 @@
+.result__paragraph {
+  @include text(14px, 20px);
+  color: $black;
+}
