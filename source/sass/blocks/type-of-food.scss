@@ -1,0 +1,20 @@
+.type-of-food {
+  text-align: left;
+
+  background-color: $gray-light;
+}
+
+.type-of-food__title {
+  @include text(24px, 37px);
+  font-weight: 400;
+  color: $black;
+}
+
+.type-of-food__about {
+  font-family: $secondary-font;
+}
+
+.type-of-food__link {
+  @include text(16px, 16px);
+  text-transform: uppercase;
+}

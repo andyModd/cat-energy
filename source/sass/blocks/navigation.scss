@@ -1,0 +1,11 @@
+.navigation {
+  text-align: center;
+}
+
+.navigation__list {
+  @include reset-list;
+}
+
+.navigation__item {
+  padding: 21.5px 0;
+}

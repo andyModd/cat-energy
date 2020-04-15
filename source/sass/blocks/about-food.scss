@@ -1,0 +1,8 @@
+.about-food {
+  font-family: $secondary-font;
+  text-align: left;
+}
+
+.about-food__list {
+  @include reset-list;
+}
