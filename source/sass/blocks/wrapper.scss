@@ -1,0 +1,9 @@
+.wrapper__title {
+  font-family: $secondary-font;
+  @include text(12px, 12px);
+}
+
+.wrapper__paragraph {
+  @include text(24px, 24px);
+  color: $black;
+}

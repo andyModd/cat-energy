@@ -1,0 +1,13 @@
+.form-group-list {
+  @include reset-list;
+}
+
+.form-group-list__title {
+  @include text(16px, 18px);
+  color: $black-light;
+  text-transform: uppercase;
+}
+
+.form-group-list__input {
+  text-transform: uppercase;
+}
