@@ -9,3 +9,16 @@
 .navigation__item {
   padding: 21.5px 0;
 }
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    min-width: 356px;
+    display: flex;
+  }
+    .navigation__item {
+      padding: 0;
+      &:not(:last-child) {
+        margin-right: 36px;
+      }
+    }
+}
