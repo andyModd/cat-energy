@@ -1,11 +1,5 @@
 .main {
-  text-align: center;
-
   outline: 1px solid blue;
-
-  &--theme-light {
-    background: $white;
-  }
 }
 
 .main__wrapper {
@@ -13,7 +7,14 @@
   min-height: 305px;
   margin-left: -20px;
 
-  background: $white url('../img/index-background-mobile@1x.jpg') no-repeat;
+  background: $green url('../img/index-background-mobile@1x.jpg') no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .main__wrapper {
+    margin: 0;
+    background: transparent;
+  }
 }
 
 .main__title {

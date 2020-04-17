@@ -4,12 +4,11 @@
   text-transform: uppercase;
   color: $black;
 
-  background-color: $white;
   outline: 1px solid black;
 }
 
 .header__wrapper{
-  padding: 13.5px 20px;
+  padding: 13px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,20 +26,31 @@
   font-size: 0;
 
   border: none;
-  background: $white;
+  background: transparent;
   outline: 1px solid black;
 }
 
 @media (min-width: $tablet-width) {
   .header {
+    padding-top: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
-    padding-top: 24px;
+
     @include text(18px, 20px);
     font-weight: 400;
     color: $black-light;
+  }
+
+  .header__wrapper {
+    padding: 0;
+  }
+}
+  @media (min-width: $desktop-width) {
+    .header {
+      background: transparent;
+    }
+
   }
 
   .header__wrapper {
