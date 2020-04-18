@@ -1,20 +1,7 @@
 .main {
   outline: 1px solid blue;
-}
 
-.main__wrapper {
-  width: 320px;
-  min-height: 305px;
-  margin-left: -20px;
-
-  background: $green url('../img/index-background-mobile@1x.jpg') no-repeat;
-}
-
-@media (min-width: $tablet-width) {
-  .main__wrapper {
-    margin: 0;
-    background: transparent;
-  }
+  background: $white url('../img/index-background-mobile@1x.jpg') no-repeat;
 }
 
 .main__title {
@@ -35,4 +22,20 @@
 .main__about-form {
   text-transform: uppercase;
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .main {
+    background: transparent;
+  }
+
+  .main__title {
+    @include text(60px, 60px);
+    color: $black;
+  }
+
+  .main__slogan {
+    @include text(20px, 20px);
+    color: $black;
+  }
 }

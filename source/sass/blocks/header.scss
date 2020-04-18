@@ -1,4 +1,6 @@
 .header {
+  padding: 0 20px;
+
   @include text(20px, 20px);
   font-weight: 500;
   text-transform: uppercase;
@@ -32,6 +34,7 @@
 
 @media (min-width: $tablet-width) {
   .header {
+    padding: 0 30px;
     padding-top: 24px;
     display: flex;
     justify-content: space-between;
@@ -45,26 +48,26 @@
   .header__wrapper {
     padding: 0;
   }
+
+  .header__menu-button {
+    display: none;
+  }
 }
   @media (min-width: $desktop-width) {
     .header {
+      padding: 0 110px;
+      padding-top: 53px;
+
+      @include text(20px, 25px);
+      color: $white;
+
       background: transparent;
     }
-
-  }
-
-  .header__wrapper {
-    padding: 0;
-  }
 
   .header__logo-img {
     &--resize {
       width: 174px;
       height: 58px;
     }
-  }
-
-  .header__menu-button {
-    display: none;
   }
 }

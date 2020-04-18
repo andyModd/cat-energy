@@ -12,7 +12,7 @@
 
 @media (min-width: $tablet-width) {
   .navigation__list {
-    min-width: 356px;
+    width: 442px;
     display: flex;
   }
     .navigation__item {
@@ -21,4 +21,10 @@
         margin-right: 36px;
       }
     }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__list {
+    width: 486px;
+  }
 }

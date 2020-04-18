@@ -3,8 +3,7 @@ html {
 }
 
 body {
-  width: 280px;
-  padding: 0 20px;
+  width: 320px;
   margin: auto;
 
   font-family: $default-font;
@@ -17,8 +16,7 @@ body {
 
 @media (min-width: $tablet-width) {
   body {
-    width: 708px;
-    padding: 0 30px;
+    width: 768px;
     margin: auto;
     background: $white;
   }
@@ -26,8 +24,7 @@ body {
 
 @media (min-width: $desktop-width) {
   body {
-    width: 1220px;
-    padding: 0 110px;
+    width: 1440px;
     margin: auto;
     background: $white url('../img/index-background-desktop@1x.jpg') no-repeat 100% 0%;
   }
