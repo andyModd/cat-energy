@@ -1,3 +1,23 @@
 .contacts-list {
-  @include reset-list;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  list-style: none;
+}
+
+.contacts-list__item {
+  &:first-child {
+    margin-left: auto;
+  }
+
+  &:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  &:last-child {
+    margin-right: auto;
+  }
 }

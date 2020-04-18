@@ -1,10 +1,14 @@
 .main {
-  outline: 1px solid blue;
+  padding-top: 28px;
+
+  text-align: center;
 
   background: $white url('../img/index-background-mobile@1x.jpg') no-repeat;
 }
 
 .main__title {
+  width: 280px;
+  padding: 0 20px;
   margin-top: 0;
   margin-bottom: 24px;
 
@@ -14,6 +18,8 @@
 }
 
 .main__slogan {
+  width: 280px;
+  padding: 0 20px;
   @include text(14px, 14px);
   color: $white;
   text-transform: uppercase;
@@ -24,8 +30,23 @@
   text-align: left;
 }
 
+.main__link {
+  margin-bottom: 20px;
+}
+
+.main__food-types {
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.main__about-food {
+  padding: 0 20px;
+}
+
 @media (min-width: $tablet-width) {
   .main {
+    text-align: left;
+
     background: transparent;
   }
 

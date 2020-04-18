@@ -1,4 +1,28 @@
 .footer {
   background: $gray-light;
-  outline: 1px solid red;
+}
+
+.footer__on-map {
+  margin-bottom: 40px;
+}
+
+.footer__logo {
+  display: block;
+  min-width: 128px;
+  margin: auto;
+  margin-bottom: 31px;
+}
+
+.footer__logo-img {
+  vertical-align: middle;
+}
+
+.footer__contacts {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__made-by {
+  padding-left: 20px;
+  padding-right: 20px;
 }

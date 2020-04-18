@@ -3,6 +3,50 @@
   text-align: left;
 }
 
+.about-food__subtitle {
+  margin-top: 0;
+}
+
 .about-food__list {
   @include reset-list;
+}
+
+.about-food__item {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $green;
+    content: url('../img/advantage-leaf@1x.png');
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &--theme-boil {
+    &::before {
+      content: url('../img/advantage-powder@1x.png');
+    }
+  }
+
+  &--theme-kitchen {
+    &::before {
+      content: url('../img/advantage-dining@1x.png');
+    }
+  }
+
+  &--theme-time {
+    &::before {
+      content: url('../img/advantage-clock@1x.png');
+    }
+  }
 }
