@@ -3,6 +3,8 @@
 }
 
 .navigation__list {
+  display: none;
+
   @include reset-list;
 }
 
@@ -14,17 +16,34 @@
   .navigation__list {
     width: 442px;
     display: flex;
+    flex-wrap: wrap;
   }
-    .navigation__item {
-      padding: 0;
-      &:not(:last-child) {
-        margin-right: 36px;
-      }
+
+  .navigation__item {
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-right: 36px;
     }
+  }
+
+  .navigation__link {
+    /*без указания блочного типа для ссылки, она выпадает из родительского блока на несколько пикселей в высоту. Причина пока не ясна*/
+    display: block;
+    &--active {
+    border-bottom: 2px solid $green;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .navigation__list {
     width: 486px;
+  }
+
+  .navigation__link {
+    &--active {
+    border-bottom: 2px solid $white;
+    }
   }
 }
