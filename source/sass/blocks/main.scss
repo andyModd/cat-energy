@@ -55,6 +55,7 @@
     padding-left: 30px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
   }
 
@@ -96,5 +97,44 @@
 
   .main__about-food {
     padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main {
+    padding-top: 29px;
+  }
+
+  .main__title {
+    margin-left: 0;
+  }
+
+  .main__slogan {
+    margin-left: 0;
+  }
+
+  .main__link {
+    margin-left: 0;
+  }
+
+  .main__image {
+    width: 552px;
+    height: 499px;
+  }
+
+  .main__wrapper {
+    padding-left: 193px;
+    height: 644px;
+    align-content: flex-start;
+  }
+
+  .main__food-types {
+    display: flex;
+    flex-direction: row;
+    padding: 0 110px;
+  }
+
+  .main__about-food {
+    padding: 0 110px;
   }
 }

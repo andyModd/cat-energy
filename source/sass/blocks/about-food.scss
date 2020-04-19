@@ -95,3 +95,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-food__item {
+    width: 305px;
+  }
+}
