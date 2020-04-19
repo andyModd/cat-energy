@@ -2,27 +2,48 @@
   background: $gray-light;
 }
 
-.footer__on-map {
-  margin-bottom: 40px;
+.footer__wrapper {
+  padding: 0 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .footer__logo {
   display: block;
-  min-width: 128px;
+  width: 128px;
   margin: auto;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .footer__logo-img {
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .footer__contacts {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 25px 0;
+  margin-bottom: 20px;
 }
 
-.footer__made-by {
-  padding-left: 20px;
-  padding-right: 20px;
+@media (min-width: $tablet-width) {
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 58px 30px;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__contacts {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__made-by {
+    min-width: 162px;
+  }
 }

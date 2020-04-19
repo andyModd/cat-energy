@@ -1,11 +1,8 @@
 .contacts-list {
-  padding-top: 25px;
-  padding-bottom: 25px;
   display: flex;
   flex-direction: row;
 
-  margin: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .contacts-list__item {

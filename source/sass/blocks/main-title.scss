@@ -5,3 +5,9 @@
   text-align: left;
   color: $black;
 }
+
+@media (min-width: $tablet-width) {
+  .main-title{
+    @include text(60px, 60px);
+  }
+}

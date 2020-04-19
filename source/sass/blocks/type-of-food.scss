@@ -22,3 +22,9 @@
   @include text(16px, 16px);
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .type-of-food {
+    padding: 0 52px;
+  }
+}

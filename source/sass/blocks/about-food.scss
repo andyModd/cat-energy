@@ -50,3 +50,48 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-food__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .about-food__item {
+    position: relative;
+
+    width: 354px;
+    min-height: 228px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:nth-child(n+1) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n+2):not(:last-child) {
+      margin-bottom: 90px;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-right: 0;
+      margin-bottom: 37px;
+    }
+
+    @for $i from 1 through 4 {
+      &:nth-child(n+#{$i})::after {
+          position: absolute;
+          left: 124px;
+          top: -38px;
+          opacity: 0.1;
+          font-family: $default-font;
+          @include text(281px, 281px);
+          content: '#{$i}';
+      }
+    }
+  }
+}
