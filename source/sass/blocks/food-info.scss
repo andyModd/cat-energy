@@ -1,7 +1,13 @@
 .food-info {
+  margin-bottom: 11px;
   font-family: $secondary-font;
 }
 
 .food-info__heading {
   font-weight: 400;
+  text-align: left;
+}
+
+.food-info__date {
+  text-align: right;
 }

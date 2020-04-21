@@ -4,11 +4,14 @@
   text-align: center;
 
   background: $white url('../img/index-background-mobile@1x.jpg') no-repeat;
+
+  &--theme-light {
+    background: $white;
+  }
 }
 
 .main__title {
   width: 280px;
-  padding: 0 20px;
   margin-top: 0;
   margin-bottom: 24px;
 
@@ -19,7 +22,6 @@
 
 .main__slogan {
   width: 280px;
-  padding: 0 20px;
   @include text(14px, 14px);
   color: $white;
   text-transform: uppercase;
@@ -40,6 +42,10 @@
 }
 
 .main__about-food {
+  padding: 0 20px;
+}
+
+.main__wrapper {
   padding: 0 20px;
 }
 
@@ -97,6 +103,16 @@
 
   .main__about-food {
     padding: 0 30px;
+  }
+
+  .main__food-card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main__catalog-title {
+    margin-top: 0;
   }
 }
 
