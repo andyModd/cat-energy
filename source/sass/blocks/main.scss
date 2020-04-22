@@ -1,13 +1,13 @@
 .main {
-  padding-top: 28px;
-
   text-align: center;
 
-  background: $white url('../img/index-background-mobile@1x.jpg') no-repeat;
+  background: linear-gradient($green 305px, $white 305px);
+}
 
-  &--theme-light {
-    background: $white;
-  }
+.main__wrapper {
+  padding-top: 30px;
+
+  background: url('../img/index-background-mobile@1x.jpg') no-repeat;
 }
 
 .main__title {
@@ -18,6 +18,11 @@
   @include text(36px, 36px);
   font-weight: 400;
   color: $white;
+}
+
+.main__link {
+  display: block;
+  margin-bottom: 22px;
 }
 
 .main__slogan {
@@ -32,37 +37,19 @@
   text-align: left;
 }
 
-.main__link {
-  margin-bottom: 20px;
-}
-
 .main__food-types {
   margin-bottom: 30px;
-  padding: 0 20px;
 }
 
-.main__about-food {
-  padding: 0 20px;
-}
-
-.main__wrapper {
-  padding: 0 20px;
+.main__image {
+  vertical-align: middle;
 }
 
 @media (min-width: $tablet-width) {
   .main {
-    padding-top: 60px;
     text-align: left;
 
     background: transparent;
-  }
-
-  .main__wrapper {
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
   }
 
   .main__title {
@@ -83,13 +70,6 @@
     color: $black;
   }
 
-  .main__link {
-    position: relative;
-    z-index: 1;
-    margin-left: 90px;
-    margin-bottom: -60px;
-  }
-
   .main__image {
     width: 709px;
     height: 609px;
@@ -98,7 +78,6 @@
 
   .main__food-types {
     margin-bottom: 50px;
-    padding: 0 30px;
   }
 
   .main__about-food {
@@ -138,19 +117,11 @@
     height: 499px;
   }
 
-  .main__wrapper {
-    padding-left: 193px;
-    height: 644px;
-    align-content: flex-start;
-  }
-
   .main__food-types {
     display: flex;
     flex-direction: row;
-    padding: 0 110px;
   }
 
   .main__about-food {
-    padding: 0 110px;
   }
 }

@@ -1,0 +1,27 @@
+.container {
+  padding: 0 20px;
+  margin: auto;
+  width: 280px;
+
+  outline: 1px solid red;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 30px;
+    margin: auto;
+    width: 708px;
+
+    outline: 1px solid green;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0 110px;
+    margin: auto;
+    width: 1080px;
+
+    outline: 1px solid black;
+  }
+}

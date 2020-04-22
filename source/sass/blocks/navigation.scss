@@ -1,10 +1,9 @@
 .navigation {
+  width: 100%;
   text-align: center;
 }
 
 .navigation__list {
-  display: none;
-
   @include reset-list;
 }
 
@@ -13,6 +12,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .navigation {
+    width:auto;
+  }
+
   .navigation__list {
     width: 442px;
     display: flex;
@@ -30,8 +33,9 @@
   .navigation__link {
     /*без указания блочного типа для ссылки, она выпадает из родительского блока на несколько пикселей в высоту. Причина пока не ясна*/
     display: block;
+
     &--active {
-    border-bottom: 2px solid $green;
+      border-bottom: 2px solid $green;
     }
   }
 }

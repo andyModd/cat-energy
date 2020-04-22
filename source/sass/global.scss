@@ -1,33 +1,10 @@
-html {
-  background: $white;
-}
-
 body {
-  width: 320px;
-  margin: auto;
-
   font-family: $default-font;
   @include text(14px, 18px);
   font-weight: 400;
   color: $black-lightest;
 
-  outline: 1px solid green;
-}
-
-@media (min-width: $tablet-width) {
-  body {
-    width: 768px;
-    margin: auto;
-    background: $white;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    width: 1440px;
-    margin: auto;
-    background: $white url('../img/index-background-desktop@1x.jpg') no-repeat 100% 0%;
-  }
+  background: $white;
 }
 
 a {
