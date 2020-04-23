@@ -8,7 +8,6 @@
 .header__wrapper{
   padding-top: 11px;
   padding-bottom: 15px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -33,10 +32,6 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     @include text(18px, 20px);
     font-weight: 400;
     color: $black-light;

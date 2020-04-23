@@ -24,6 +24,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
 
   .footer__logo {
     margin: 0;

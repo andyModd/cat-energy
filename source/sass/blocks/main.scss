@@ -4,14 +4,13 @@
   background: linear-gradient($green 305px, $white 305px);
 }
 
-.main__wrapper {
+.main__container {
   padding-top: 30px;
 
   background: url('../img/index-background-mobile@1x.jpg') no-repeat;
 }
 
 .main__title {
-  width: 280px;
   margin-top: 0;
   margin-bottom: 24px;
 
@@ -26,7 +25,6 @@
 }
 
 .main__slogan {
-  width: 280px;
   @include text(14px, 14px);
   color: $white;
   text-transform: uppercase;
@@ -49,11 +47,29 @@
   .main {
     text-align: left;
 
-    background: transparent;
+    background: $white;
+  }
+
+  .main__container {
+    background: none;
+  }
+
+  .main__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main__link {
+    position: relative;
+    z-index: 1;
+
+    width: 245px;
+    margin-left: 90px;
+    margin-bottom: -60px;
   }
 
   .main__title {
-    width: 420px;
     padding: 0;
     margin-left: 90px;
 

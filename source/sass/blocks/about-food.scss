@@ -9,6 +9,7 @@
 
 .about-food__list {
   @include reset-list;
+  padding-bottom: 40px;
 }
 
 .about-food__item {

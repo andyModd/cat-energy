@@ -9,11 +9,15 @@
 
 .navigation__item {
   padding: 22.5px 0;
+
+  &:last-child {
+    padding-bottom:  7.5px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .navigation {
-    width:auto;
+    width: auto;
   }
 
   .navigation__list {
