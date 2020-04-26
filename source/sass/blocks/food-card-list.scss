@@ -1,9 +1,12 @@
 .food-card-list {
   @include reset-list;
 }
-
 @media (min-width: $tablet-width) {
-  .food-card-list {
-    padding: 0 20px;
+  .food-card-list__food-card {
+    margin-bottom: 140px;
+
+    &:nth-child(odd) {
+      margin-right: 60px;
+    }
   }
 }

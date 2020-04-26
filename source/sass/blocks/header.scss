@@ -3,6 +3,11 @@
   font-weight: 500;
   color: $black;
   text-align: center;
+
+  &--theme-contrast {
+    background: transparent;
+    color: $black;
+  }
 }
 
 .header__title {
@@ -67,6 +72,7 @@
     font-weight: 400;
     color: $black-light;
     text-align: left;
+
   }
 
   .header__title {
@@ -138,14 +144,16 @@
   @media (min-width: $desktop-width) {
     .header {
       @include text(20px, 25px);
+      color: $white;
 
       background-image: url('../img/index-background-desktop@1x.jpg'),
                         linear-gradient(to right, $white 50%, $green-dark 50%);
       background-position: 100% 0%;
       background-repeat: no-repeat;
 
-      &--color-contrast {
-        color: $white;
+      &--theme-contrast {
+        background: transparent;
+        color: $black;
       }
     }
 
