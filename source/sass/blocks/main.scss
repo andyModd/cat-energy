@@ -1,33 +1,10 @@
 .main {
   text-align: center;
-
-  background: linear-gradient($green 305px, $white 305px);
-}
-
-.main__container {
-  padding-top: 30px;
-
-  background: url('../img/index-background-mobile@1x.jpg') no-repeat;
-}
-
-.main__title {
-  margin-top: 0;
-  margin-bottom: 24px;
-
-  @include text(36px, 36px);
-  font-weight: 400;
-  color: $white;
 }
 
 .main__link {
   display: block;
   margin-bottom: 22px;
-}
-
-.main__slogan {
-  @include text(14px, 14px);
-  color: $white;
-  text-transform: uppercase;
 }
 
 .main__about-form {
@@ -54,50 +31,8 @@
     background: none;
   }
 
-  .main__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .main__link {
-    position: relative;
-    z-index: 1;
-
-    width: 245px;
-    margin-left: 90px;
-    margin-bottom: -60px;
-  }
-
-  .main__title {
-    padding: 0;
-    margin-left: 90px;
-
-    @include text(60px, 60px);
-    color: $black;
-  }
-
-  .main__slogan {
-    padding: 0;
-    margin-left: 90px;
-    margin-bottom: 40px;
-
-    @include text(20px, 20px);
-    color: $black;
-  }
-
-  .main__image {
-    width: 709px;
-    height: 609px;
-    order: 1;
-  }
-
   .main__food-types {
     margin-bottom: 50px;
-  }
-
-  .main__about-food {
-    padding: 0 30px;
   }
 
   .main__food-card-list {
@@ -112,32 +47,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main {
-    padding-top: 29px;
-  }
-
-  .main__title {
-    margin-left: 0;
-  }
-
-  .main__slogan {
-    margin-left: 0;
-  }
-
-  .main__link {
-    margin-left: 0;
-  }
-
-  .main__image {
-    width: 552px;
-    height: 499px;
-  }
-
   .main__food-types {
     display: flex;
     flex-direction: row;
-  }
-
-  .main__about-food {
   }
 }
