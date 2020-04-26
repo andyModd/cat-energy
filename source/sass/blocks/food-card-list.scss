@@ -1,12 +1,26 @@
 .food-card-list {
   @include reset-list;
 }
-@media (min-width: $tablet-width) {
-  .food-card-list__food-card {
-    margin-bottom: 140px;
 
-    &:nth-child(odd) {
+@media (min-width: $tablet-width) {
+  .food-card-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .food-card-list__food-card {
+    &:not(:nth-child(2n+2)) {
       margin-right: 60px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-card-list__food-card {
+    &:not(:nth-child(4n+4)) {
+      margin-right: 80px;
     }
   }
 }

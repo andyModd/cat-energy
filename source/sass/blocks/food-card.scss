@@ -1,11 +1,13 @@
 .food-card {
+  @include text(12px, 16px);
+}
+
+.food-card__container {
   position: relative;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  @include text(12px, 16px);
 }
 
 .food-card__link {
@@ -32,16 +34,24 @@
 
 @media (min-width: $tablet-width) {
   .food-card {
-    padding: 0 40px;
+    padding: 0 40px 40px;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     width: 244px;
+    min-height: 391px;
+
+    @include text(16px, 16px);
 
     background: $gray;
   }
 
   .food-card__name {
+    width: 140px;
     margin-left: 0;
+
+    text-align: center;
+    @include text(20px, 20px);
   }
 
   .food-card__info {
@@ -56,5 +66,11 @@
 
   .food-card__link {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-card {
+    width: 165px;
   }
 }

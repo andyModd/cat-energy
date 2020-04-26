@@ -1,5 +1,10 @@
 .see-more {
-  padding-top: 80px;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  text-align: center;
 }
 
 .see-more__paragraph {
@@ -11,4 +16,20 @@
 .see-more__info {
   font-family: $secondary-font;
   @include text(12px, 16px);
+}
+
+@media (min-width: $tablet-width) {
+  .see-more {
+    min-height:389px;
+    width: 242px;
+    padding: 0 40px 40px;
+
+    border: 1px solid rgba(205,205,205,0.5);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .see-more {
+    width: 163px;
+  }
 }

@@ -11,3 +11,9 @@
 .food-info__date {
   text-align: right;
 }
+
+@media (min-width: $tablet-width) {
+  .food-info {
+    width: 100%;
+  }
+}

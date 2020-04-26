@@ -9,6 +9,7 @@
 
 .main__title {
   margin-top: 0;
+  border-top: 1px solid #e6e6e6;
 }
 
 .main__about-form {
@@ -32,6 +33,7 @@
   }
 
   .main__container {
+    padding-top: 65px;
     background: none;
   }
 
@@ -39,11 +41,6 @@
     margin-bottom: 50px;
   }
 
-  .main__food-card-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 
   .main__catalog-title {
     margin-top: 0;
@@ -51,6 +48,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main__container {
+    padding-top: 80px;
+  }
+
   .main__food-types {
     display: flex;
     flex-direction: row;
