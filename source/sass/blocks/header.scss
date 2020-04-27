@@ -1,13 +1,9 @@
 .header {
+  margin-bottom: 22px;
+
   @include text(20px, 20px);
   font-weight: 500;
   color: $black;
-  text-align: center;
-
-  &--theme-contrast {
-    background: transparent;
-    color: $black;
-  }
 }
 
 .header__title {
@@ -30,6 +26,7 @@
 }
 
 .header__wrapper{
+  padding: 0 20px;
   padding-top: 11px;
   padding-bottom: 15px;
   display: flex;
@@ -38,19 +35,23 @@
   align-items: center;
 }
 
-.header__promo-wrapper {
-  margin-bottom: 22px;
-
-  background: $green-dark;
-}
-
 .header__promo-container {
   padding-top: 30px;
 
-  background: url('../img/index-background-mobile@1x.jpg');
+  background-image: url('../img/index-background-mobile@1x.jpg'),
+                    linear-gradient($green-dark 305px, $white 305px);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+
 }
 
 .header__logo-img {
+  vertical-align: middle;
+}
+
+.header__image {
+  margin-bottom: 3px;
+
   vertical-align: middle;
 }
 
@@ -68,10 +69,17 @@
 
 @media (min-width: $tablet-width) {
   .header {
+    margin-bottom: 0;
+
     @include text(18px, 20px);
     font-weight: 400;
     color: $black-light;
     text-align: left;
+
+
+      &--theme-contrast {
+        color: $black;
+      }
 
   }
 
