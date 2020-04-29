@@ -4,4 +4,15 @@
 
 .food-info__heading {
   font-weight: 400;
+  text-align: left;
+}
+
+.food-info__date {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .food-info {
+    width: 100%;
+  }
 }

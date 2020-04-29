@@ -3,6 +3,7 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'global.scss';
+@import 'container.scss';
 @import 'blocks/visually-hidden.scss';
 @import 'blocks/header.scss';
 @import 'blocks/navigation.scss';
@@ -16,9 +17,10 @@
 @import 'blocks/wrapper.scss';
 @import 'blocks/slider.scss';
 @import 'blocks/main-title.scss';
+@import 'blocks/contacts-list.scss';
 @import 'blocks/footer.scss';
 @import 'blocks/on-map.scss';
-@import 'blocks/contacts-list.scss';
+@import 'blocks/made-by.scss';
 
 @import 'blocks/food-card.scss';
 @import 'blocks/food-card-list.scss';

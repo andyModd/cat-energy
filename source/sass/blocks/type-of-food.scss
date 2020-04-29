@@ -1,10 +1,15 @@
 .type-of-food {
+  padding: 0 20px;
+  padding-top: 40px;
   text-align: left;
 
   background-color: $gray-light;
 }
 
 .type-of-food__title {
+  margin-top: 0;
+  padding-left: 70px;
+
   @include text(24px, 37px);
   font-weight: 400;
   color: $black;
@@ -15,6 +20,51 @@
 }
 
 .type-of-food__link {
+  display: block;
+  padding: 20px 0;
+
   @include text(16px, 16px);
   text-transform: uppercase;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: $tablet-width) {
+  .type-of-food {
+    padding-top: 80px;
+    padding-left: 52px;
+    padding-right: 285px;
+    padding-bottom: 60px;
+  }
+
+  .type-of-food__title {
+    padding: 0;
+  }
+
+  .type-of-food__about {
+    margin-bottom: 60px;
+  }
+
+  .type-of-food__link {
+    padding: 0;
+
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type-of-food {
+    padding-right: 56px;
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+  .type-of-food__title {
+    padding-left: 164px;
+    margin-bottom: 75px;
+  }
+
+  .type-of-food__about {
+    margin-bottom: 36px;
+  }
 }

@@ -3,6 +3,108 @@
   text-align: left;
 }
 
+.about-food__subtitle {
+  margin-top: 0;
+}
+
 .about-food__list {
   @include reset-list;
+}
+
+.about-food__item {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $green;
+    content: url('../img/advantage-leaf@1x.png');
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &--theme-boil {
+    &::before {
+      content: url('../img/advantage-powder@1x.png');
+    }
+  }
+
+  &--theme-kitchen {
+    &::before {
+      content: url('../img/advantage-dining@1x.png');
+    }
+  }
+
+  &--theme-time {
+    &::before {
+      content: url('../img/advantage-clock@1x.png');
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-food__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .about-food__item {
+    position: relative;
+
+    width: 245px;
+    min-height: 228px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:nth-child(n+1) {
+      margin-bottom: 90px;
+    }
+
+    &:nth-child(n+3) {
+      margin-bottom: 55px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 139px;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-right: 0;
+      margin-bottom: 37px;
+    }
+
+    @for $i from 1 through 4 {
+      &:nth-child(n+#{$i})::after {
+          position: absolute;
+          left: 124px;
+          top: -38px;
+          opacity: 0.1;
+          font-family: $default-font;
+          @include text(281px, 281px);
+          content: '#{$i}';
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-food__item {
+
+    &:not(:nth-child(4n+4)) {
+      margin-right: 80px;
+    }
+  }
 }

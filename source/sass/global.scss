@@ -1,13 +1,17 @@
 body {
-  width: 320px;
-  margin: auto;
-
   font-family: $default-font;
   @include text(14px, 18px);
   font-weight: 400;
+  text-align: center;
   color: $black-lightest;
 
-  background-color: $gray-light;
+  background: $white;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    @include text(16px, 24px);
+  }
 }
 
 a {

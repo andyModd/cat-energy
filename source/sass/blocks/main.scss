@@ -1,32 +1,63 @@
 .main {
-  padding-top: 27px;
-
   text-align: center;
+}
 
-  background: $white url('../img/index-background-mobile@1x.jpg') no-repeat;
-  outline: 1px solid blue;
-
-  &--theme-light {
-    background: $white;
-  }
+.main__link {
+  display: block;
+  margin-bottom: 22px;
 }
 
 .main__title {
-  margin-top: 0;
-  margin-bottom: 24px;
+  margin: 0;
+  padding: 30px 20px;
 
-  @include text(36px, 36px);
-  font-weight: 400;
-  color: $white;
-}
-
-.main__slogan {
-  @include text(14px, 14px);
-  color: $white;
-  text-transform: uppercase;
+  border-top: 1px solid #e6e6e6;
 }
 
 .main__about-form {
   text-transform: uppercase;
   text-align: left;
+}
+
+.main__food-types {
+  margin-bottom: 30px;
+}
+
+.main__image {
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .main {
+    text-align: left;
+
+    background: $white;
+  }
+
+  .main__food-types {
+    margin-bottom: 50px;
+  }
+
+  .main__title {
+    padding-top: 66px;
+    padding-bottom: 156px;
+  }
+
+
+  .main__catalog-title {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__title{
+    padding-top: 83px;
+
+    border: none;
+  }
+
+  .main__food-types {
+    display: flex;
+    flex-direction: row;
+  }
 }

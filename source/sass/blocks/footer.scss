@@ -1,5 +1,48 @@
 .footer {
   text-align: center;
 
-  outline: 1px solid red;
+  background: $gray-light;
+}
+
+.footer__logo {
+  display: block;
+  width: 128px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.footer__logo-img {
+  vertical-align: top;
+}
+
+.footer__contacts {
+  margin-bottom: 20px;
+}
+
+.footer__wrapper {
+  padding-top: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__contacts {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer__made-by {
+    min-width: 162px;
+  }
 }
