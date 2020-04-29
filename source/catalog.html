@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header header--theme-contrast">
-      <div class="header__container container">
+    <header class="header header--theme-contrast header--reset-layout">
+      <div class="header__container container container--reset">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html">
             <img class="header__logo-img header__logo-img--resize" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Логотип сайта Кэт Энерджи">
@@ -16,7 +16,7 @@
           <button class="header__menu-button" type="button">Открыть меню</button>
         </div>
 
-        <nav class="header__navigation navigation navigation--theme-contrast">
+        <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
             <li class="navigation__item"><a class="navigation__link navigation__link--active">Каталог продукции</a></li>
@@ -26,179 +26,179 @@
       </div>
     </header>
 
-    <main class="main main--theme-light">
-      <div class="main__container">
-        <h1 class="main__title main-title"><div class="main-title__container container">Каталог продукции</div></h1>
+    <main class="main">
+      <div class="main__container container container--reset">
+        <h1 class="main__title main-title">Каталог продукции</h1>
         <div class="main__food-card-list food-card-list">
           <article class="food-card-list__food-card food-card">
-            <div class="food-card__container container">
             <h2 class="food-card__title visually-hidden">Карточка товара</h2>
-            <p class="food-card__name"><a class="food-card__name-link" href="#">Cat Energy PRO 500 г</a></p>
             <a class="food-card__img-link" href="#">
               <img class="food-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Изображение корма Кэт Энерджи">
             </a>
-            <table class="food-card__info food-info">
-              <tr class="food-info__row">
-                <th class="food-info__heading">Объем</th>
-                <td class="food-info__date">500 г</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Вкус</th>
-                <td class="food-info__date">Курица</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Цена</th>
-                <td class="food-info__date">700 Р.</td>
-              </tr>
-            </table>
-            <a class="food-card__link link" href="">Заказать</a>
+            <div class="food-card__wrapper">
+              <a class="food-card__name-link" href="#">Cat Energy PRO 500 г</a>
+              <table class="food-card__info food-info">
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Объем</th>
+                  <td class="food-info__date">500 г</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Вкус</th>
+                  <td class="food-info__date">Курица</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Цена</th>
+                  <td class="food-info__date">700 Р.</td>
+                </tr>
+              </table>
           </div>
+            <a class="food-card__link link" href="">Заказать</a>
           </article>
           <article class="food-card-list__food-card food-card">
-            <div class="food-card__container container">
             <h2 class="food-card__title visually-hidden">Карточка товара</h2>
-            <p class="food-card__name"><a class="food-card__name-link" href="#">Cat Energy PRO 1000 г</a></p>
             <a class="food-card__img-link" href="#">
               <img class="food-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Изображение корма Кэт Энерджи">
             </a>
-            <table class="food-card__info food-info">
-              <tr class="food-info__row">
-                <th class="food-info__heading">Объем</th>
-                <td class="food-info__date">1000 г</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Вкус</th>
-                <td class="food-info__date">Курица</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Цена</th>
-                <td class="food-info__date">1000 Р.</td>
-              </tr>
-            </table>
+            <div class="food-card__wrapper">
+              <a class="food-card__name-link" href="#">Cat Energy PRO 1000 г</a>
+              <table class="food-card__info food-info">
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Объем</th>
+                  <td class="food-info__date">1000 г</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Вкус</th>
+                  <td class="food-info__date">Курица</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Цена</th>
+                  <td class="food-info__date">1000 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="food-card__link link" href="">Заказать</a>
-          </div>
           </article>
           <article class="food-card-list__food-card food-card">
-            <div class="food-card__container container">
             <h2 class="food-card__title visually-hidden">Карточка товара</h2>
-            <p class="food-card__name"><a class="food-card__name-link" href="#">Cat Energy PRO 500 г</a></p>
             <a class="food-card__img-link" href="#">
               <img class="food-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Изображение корма Кэт Энерджи">
             </a>
-            <table class="food-card__info food-info">
-              <tr class="food-info__row">
-                <th class="food-info__heading">Объем</th>
-                <td class="food-info__date">500 г</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Вкус</th>
-                <td class="food-info__date">Рыба</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Цена</th>
-                <td class="food-info__date">700 Р.</td>
-              </tr>
-            </table>
+            <div class="food-card__wrapper">
+              <a class="food-card__name-link" href="#">Cat Energy PRO 500 г</a>
+              <table class="food-card__info food-info">
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Объем</th>
+                  <td class="food-info__date">500 г</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Вкус</th>
+                  <td class="food-info__date">Рыба</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Цена</th>
+                  <td class="food-info__date">700 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="food-card__link link" href="">Заказать</a>
-          </div>
           </article>
           <article class="food-card-list__food-card food-card">
-            <div class="food-card__container container">
             <h2 class="food-card__title visually-hidden">Карточка товара</h2>
-            <p class="food-card__name"><a class="food-card__name-link" href="#">Cat Energy PRO 1000 г</a></p>
             <a class="food-card__img-link" href="#">
               <img class="food-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Изображение корма Кэт Энерджи">
             </a>
-            <table class="food-card__info food-info">
-              <tr class="food-info__row">
-                <th class="food-info__heading">Объем</th>
-                <td class="food-info__date">1000 г</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Вкус</th>
-                <td class="food-info__date">Рыба</td>
-              </tr>
-              <tr class="food-info__row">
-              <th class="food-info__heading">Цена</th>
-                <td class="food-info__date">1000 Р.</td>
-              </tr>
-            </table>
+            <div class="food-card__wrapper">
+              <a class="food-card__name-link" href="#">Cat Energy PRO 1000 г</a>
+              <table class="food-card__info food-info">
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Объем</th>
+                  <td class="food-info__date">1000 г</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Вкус</th>
+                  <td class="food-info__date">Рыба</td>
+                </tr>
+                <tr class="food-info__row">
+                <th class="food-info__heading">Цена</th>
+                  <td class="food-info__date">1000 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="food-card__link link" href="">Заказать</a>
-          </div>
           </article>
           <article class="food-card-list__food-card food-card">
-            <div class="food-card__container container">
             <h2 class="food-card__title visually-hidden">Карточка товара</h2>
-            <p class="food-card__name"><a class="food-card__name-link" href="#">Cat Energy Slim 500 г</a></p>
             <a class="food-card__img-link" href="#">
               <img class="food-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Изображение корма Кэт Энерджи">
             </a>
-            <table class="food-card__info food-info">
-              <tr class="food-info__row">
-                <th class="food-info__heading">Объем</th>
-                <td class="food-info__date">500 г</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Вкус</th>
-                <td class="food-info__date">Гречка</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Цена</th>
-                <td class="food-info__date">400 Р.</td>
-              </tr>
-            </table>
+            <div class="food-card__wrapper">
+              <a class="food-card__name-link" href="#">Cat Energy Slim 500 г</a>
+              <table class="food-card__info food-info">
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Объем</th>
+                  <td class="food-info__date">500 г</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Вкус</th>
+                  <td class="food-info__date">Гречка</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Цена</th>
+                  <td class="food-info__date">400 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="food-card__link link" href="">Заказать</a>
-          </div>
           </article>
           <article class="food-card-list__food-card food-card">
-            <div class="food-card__container container">
             <h2 class="food-card__title visually-hidden">Карточка товара</h2>
-            <p class="food-card__name"><a class="food-card__name-link" href="#">Cat Energy Slim 1000 г</a></p>
             <a class="food-card__img-link" href="#">
               <img class="food-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Изображение корма Кэт Энерджи">
             </a>
-            <table class="food-card__info food-info">
-              <tr class="food-info__row">
-                <th class="food-info__heading">Объем</th>
-                <td class="food-info__date">1000 г</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Вкус</th>
-                <td class="food-info__date">Гречка</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Цена</th>
-                <td class="food-info__date">700 Р.</td>
-              </tr>
-            </table>
+            <div class="food-card__wrapper">
+              <a class="food-card__name-link" href="#">Cat Energy Slim 1000 г</a>
+              <table class="food-card__info food-info">
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Объем</th>
+                  <td class="food-info__date">1000 г</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Вкус</th>
+                  <td class="food-info__date">Гречка</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Цена</th>
+                  <td class="food-info__date">700 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="food-card__link link" href="">Заказать</a>
-          </div>
           </article>
           <article class="food-card-list__food-card food-card">
-            <div class="food-card__container container">
             <h2 class="food-card__title visually-hidden">Карточка товара</h2>
-            <p class="food-card__name"><a class="food-card__name-link" href="#">Cat Energy Slim 500 г</a></p>
             <a class="food-card__img-link" href="#">
               <img class="food-card__img" src="https://via.placeholder.com/150x150" width="140" height="144" alt="Изображение корма Кэт Энерджи">
             </a>
-            <table class="food-card__info food-info">
-              <tr class="food-info__row">
-                <th class="food-info__heading">Объем</th>
-                <td class="food-info__date">500 г</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Вкус</th>
-                <td class="food-info__date">Рис</td>
-              </tr>
-              <tr class="food-info__row">
-                <th class="food-info__heading">Цена</th>
-                <td class="food-info__date">500 Р.</td>
-              </tr>
-            </table>
+            <div class="food-card__wrapper">
+              <a class="food-card__name-link" href="#">Cat Energy Slim 500 г</a>
+              <table class="food-card__info food-info">
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Объем</th>
+                  <td class="food-info__date">500 г</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Вкус</th>
+                  <td class="food-info__date">Рис</td>
+                </tr>
+                <tr class="food-info__row">
+                  <th class="food-info__heading">Цена</th>
+                  <td class="food-info__date">500 Р.</td>
+                </tr>
+              </table>
+            </div>
             <a class="food-card__link link" href="">Заказать</a>
-          </div>
           </article>
-          <div class="main__see-more see-more">
+          <div class="food-card-list__food-card see-more">
             <p class="see-more__paragraph">Показать еще 100500 товаров</p>
             <p class="see-more__info">На самом деле вкусов гораздо больше!</p>
             <a class="see-more__link link link--theme-gray" href="#">Показать все</a>

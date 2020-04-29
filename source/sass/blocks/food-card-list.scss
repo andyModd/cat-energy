@@ -2,6 +2,11 @@
   @include reset-list;
 }
 
+.food-card-list__food-card {
+  padding: 0 20px;
+  padding-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .food-card-list {
     display: flex;
@@ -11,8 +16,14 @@
   }
 
   .food-card-list__food-card {
+    padding: 0 40px 40px;
+
     &:not(:nth-child(2n+2)) {
       margin-right: 60px;
+    }
+
+    &:not(:nth-last-child(-n+2)) {
+      margin-bottom: 140px;
     }
   }
 }
@@ -21,6 +32,10 @@
   .food-card-list__food-card {
     &:not(:nth-child(4n+4)) {
       margin-right: 80px;
+    }
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0px;
     }
   }
 }

@@ -54,7 +54,9 @@
 
 @media (min-width: $desktop-width) {
   .type-of-food {
+    padding-right: 56px;
     width: 570px;
+    box-sizing: border-box;
   }
 
   .type-of-food__title {
