@@ -1,20 +1,26 @@
 .wrapper {
   position: relative;
 
+  width: 124px;
+  box-sizing: border-box;
+
+  border-radius: 3px;
   border: 1px solid #cdcdcd;
 }
 
 .wrapper__title {
   position: absolute;
-  bottom: -15px;
+  bottom: -10px;
   left: calc(50% - 43.5px);
 
   margin: 0;
+  padding: 0 8px;
   width: 87px;
+  box-sizing: border-box;
 
   font-family: $secondary-font;
   @include text(12px, 12px);
-  text-transform: uppercase;
+  text-transform: lowercase;
 
   background: $gray-light;
 }
@@ -22,5 +28,25 @@
 .wrapper__paragraph {
   @include text(24px, 24px);
   color: $black;
+}
 
+@media (min-width: $tablet-width) {
+  .wrapper {
+    width: 162px;
+  }
+
+  .wrapper__paragraph {
+    text-align: center;
+  }
+
+  .wrapper__title {
+    bottom: -5px;
+
+    width: auto;
+
+    word-spacing: normal;
+    @include text(14px, 14px);
+
+    background: $white;
+  }
 }

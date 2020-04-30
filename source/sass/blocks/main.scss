@@ -27,6 +27,10 @@
   vertical-align: middle;
 }
 
+.main__promo {
+  background: $gray-light;
+}
+
 @media (min-width: $tablet-width) {
   .main {
     text-align: left;
@@ -47,7 +51,16 @@
   .main__catalog-title {
     margin-top: 0;
   }
+
+  .main__promo {
+    padding-top: 50px;
+    box-sizing: border-box;
+
+    background: linear-gradient($white 619px, $gray 619px);
+  }
 }
+
+
 
 @media (min-width: $desktop-width) {
   .main__title{

@@ -1,9 +1,11 @@
 .on-map__wrapper {
-  padding: 30px 0;
-
   text-align: left;
 
   background-color: transparent;
+
+  &--theme-light {
+    background-color: $white;
+  }
 }
 
 .on-map__cooperation {
@@ -23,15 +25,39 @@
   @include text(14px, 20px);
 }
 
-.on-map__wrapper--theme-light {
-  background-color: $white;
-}
-
 .on-map__img {
   vertical-align: middle;
 }
 
 .on-map__container {
-  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .on-map__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .on-map__cooperation {
+    margin: 0;
+    margin-left: 40px;
+  }
+
+  .on-map__address {
+    min-height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 40px;
+  }
+
+  .on-map__wrap:last-child {
+    margin-top: auto;
+  }
 }

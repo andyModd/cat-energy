@@ -23,3 +23,19 @@
 .slider__img {
   margin-left: -20px;
 }
+
+@media(min-width: $tablet-width) {
+  .slider__img {
+    margin: 0;
+  }
+
+  .slider__track {
+    margin: 0 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__switch {
+    justify-content: flex-end;
+  }
+}

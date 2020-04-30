@@ -1,6 +1,4 @@
 .result__wrapper {
-  width: 124px;
-
   &:not(:last-of-type) {
     margin-right: 16px;
   }
@@ -12,4 +10,45 @@
 
   @include text(14px, 20px);
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .result__paragraph {
+    margin: 0;
+    margin-left: auto;
+
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .result__wrapper {
+    &:not(:last-of-type) {
+      margin-right: 42px;
+    }
+
+    &:first-of-type .wrapper__title {
+      left: 24px;
+    }
+
+
+    &:last-of-type .wrapper__title {
+      left: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result__paragraph {
+    margin: 0;
+    margin-top: 60px;
+    width: 100%;
+    flex-direction: row;
+
+    text-align: left;
+  }
+
+  .result__wrap {
+    margin-left: 64px;
+  }
 }
