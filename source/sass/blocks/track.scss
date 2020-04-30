@@ -1,0 +1,18 @@
+.track {
+  width: 84px;
+  height: 14px;
+  padding: 3px 6px;
+  box-sizing: border-box;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  background: $white;
+}
+
+.track__thumb {
+  width: 35px;
+  height: 6px;
+
+  background: $green;
+  border-radius: 6px;
+}

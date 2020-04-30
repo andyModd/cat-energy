@@ -1,16 +1,23 @@
 .on-map__wrapper {
+  padding: 30px 0;
+
+  text-align: left;
+
   background-color: transparent;
 }
 
 .on-map__cooperation {
-  margin-top: 0;
+  margin: 0;
+  width: 123px;
+  margin-right: 17px;
 
   @include text(16px, 20px);
   color: $black;
 }
 
 .on-map__address {
-  margin-bottom: 0;
+  margin: 0;
+  width: 50%;
 
   font-family: $secondary-font;
   @include text(14px, 20px);
@@ -22,4 +29,9 @@
 
 .on-map__img {
   vertical-align: middle;
+}
+
+.on-map__container {
+  display: flex;
+
 }

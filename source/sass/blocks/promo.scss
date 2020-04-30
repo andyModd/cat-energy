@@ -10,3 +10,11 @@
   font-family: $secondary-font;
   text-align: left;
 }
+
+.promo__result {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}

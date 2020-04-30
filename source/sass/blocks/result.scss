@@ -1,4 +1,15 @@
+.result__wrapper {
+  width: 124px;
+
+  &:not(:last-of-type) {
+    margin-right: 16px;
+  }
+}
+
 .result__paragraph {
+  margin-top: 20px;
+  margin-bottom: 44px;
+
   @include text(14px, 20px);
   color: $black;
 }
