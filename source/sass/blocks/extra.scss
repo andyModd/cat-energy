@@ -1,3 +1,20 @@
 .extra__list {
-  @include reset-list;
+  list-style: none;
+}
+
+.extra__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+
+  padding: 30px 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .extra__item {
+    justify-content: flex-end;
+  }
 }

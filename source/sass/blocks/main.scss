@@ -31,6 +31,17 @@
   background: $gray-light;
 }
 
+.main__special-promo {
+  min-height: 289px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  background: $green url('../img/gift-photo-mobile@1x.jpg') no-repeat center top;
+  background-clip: content-box;
+}
+
 @media (min-width: $tablet-width) {
   .main {
     text-align: left;
@@ -57,6 +68,16 @@
     box-sizing: border-box;
 
     background: linear-gradient($white 619px, $gray 619px);
+  }
+
+  .main__special-promo {
+    min-height: 200px;
+    justify-content: center;
+    align-items: flex-end;
+
+    background: $green url('../img/gift-photo-tablet@1x.jpg') no-repeat center top;
+    background-clip: content-box;
+
   }
 }
 

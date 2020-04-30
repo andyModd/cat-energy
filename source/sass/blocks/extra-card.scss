@@ -1,10 +1,30 @@
 .extra-card__name {
+  margin-top: 0;
+  width: 100%;
+
   @include text(16px, 16px);
   color: $black-light;
   text-transform: uppercase;
 }
 
 .extra-card__info {
+  margin-top: 0;
+
   @include text(14px, 14px);
   color: $black-lightest;
+}
+
+.extra-card__link {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-card__name {
+    width: auto;
+    margin-right: auto;
+  }
+
+  .extra-card__info {
+    margin-left: 52px;
+  }
 }

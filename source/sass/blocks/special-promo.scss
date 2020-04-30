@@ -1,11 +1,16 @@
-.special-promo {
-  min-height: 289px;
-
-  background: $green url('../img/gift-photo-mobile@1x.jpg') no-repeat center top;
-}
-
 .special-promo__about {
+  width: 160px;
+  margin: 0;
+  margin-bottom: 45px;
   font-family: $secondary-font;
   @include text(16px, 20px);
   color: $white;
+}
+
+
+@media(min-width: $tablet-width) {
+  .special-promo__about {
+    margin-right: 125px;
+    margin-bottom: 0;
+  }
 }
