@@ -1,5 +1,12 @@
 .title {
   @include text(24px, 24px);
+  font-weight: 400;
   color: $black;
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    @include text(36px, 36px);
+  }
 }

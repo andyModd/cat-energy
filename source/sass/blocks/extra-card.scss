@@ -7,9 +7,9 @@
   text-transform: uppercase;
 }
 
-.extra-card__info {
+.extra-card__amount,
+.extra-card__price {
   margin-top: 0;
-
   @include text(14px, 14px);
   color: $black-lightest;
 }
@@ -24,7 +24,33 @@
     margin-right: auto;
   }
 
-  .extra-card__info {
+  .extra-card__price {
     margin-left: 52px;
+  }
+
+  .extra-card__amount {
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-card__name {
+    margin: 0;
+    margin-right: 80px;
+    width: 245px;
+  }
+
+  .extra-card__amount {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .extra-card__price {
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .extra-card__link {
+    width: 245px;
   }
 }

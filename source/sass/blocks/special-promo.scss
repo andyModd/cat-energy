@@ -14,3 +14,12 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .special-promo__about {
+    margin:0;
+    margin-bottom: 45px;
+
+    text-align: center;
+  }
+}
