@@ -27,7 +27,7 @@
     </header>
 
     <main class="main">
-      <div class="main__container container">
+      <div class="main__container container container--change-layout">
         <h1 class="main__title main-title main__title--padding-reset">Подбор программы</h1>
         <p class="main__about-form">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="main__form form" action="https://echo.htmlacademy.ru" method="post">
@@ -43,9 +43,9 @@
       </div>
 
           <fieldset class="form__group form-group">
-            <div class="form-group__container container">
+            <div class="form-group__container container container--change-layout">
               <h2 class="form-group__title visually-hidden">Цель программы</h2>
-              <ul class="form-group__list form-group-list">
+              <ul class="form-group__list form-group-list form-group-list--accent">
                 <li class="form-group-list__item">
                   <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Похудение"><span class="form-group-list__radiomark"></span>Похудение</label>
                 </li>
@@ -60,7 +60,7 @@
           </fieldset>
 
           <fieldset class="form_group form-group">
-            <div class="form-group__container container">
+            <div class="form-group__container container container--change-layout">
               <h2 class="form-group__title title">Контактные данные (владельца кота)</h2>
               <ul class="form-group__list form-group-list">
                 <li class="form-group-list__item"><label class="form-group-list__title">E-mail:*<input class="form-group-list__input" type="email" name="email"></label></li>
@@ -69,7 +69,7 @@
             </div>
           </fieldset>
 
-          <div class="container">
+          <div class="main__box container container--change-layout">
             <fieldset class="form__group form-group">
               <h2 class="form-group_title title">Комментарий</h2>
               <textarea class="form-group-list__input-comment" name="comment">Расскажите обо всех повадках кота</textarea>
@@ -77,7 +77,7 @@
 
             <fieldset class="form__group form-group">
               <h2 class="form-group__title title">Дополнительно</h2>
-              <ul class="form-group__list form-group-list">
+              <ul class="form-group__list form-group-list form-group-list--row-layout">
                 <li class="form-group-list__item">
                   <label class="form-group-list__title"><input class="form-group-list__checkbox" type="checkbox" name="sweetener" value="Сахарозаменитель"><span class="form-group-list__checkmark"></span>Сахарозаменитель</label>
                 </li>

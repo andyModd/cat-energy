@@ -85,3 +85,28 @@
 
   border: 1px solid #cdcdcd;
 }
+
+@media (min-width: $tablet-width) {
+  .form-group-list {
+    &--accent {
+      border: 1px solid #cdcdcd;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    &--row-layout {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &--row-layout .form-group-list__item {
+      width: 50%;
+    }
+  }
+
+  .form-group-list__title {
+    @include text(20px, 20px);
+  }
+}

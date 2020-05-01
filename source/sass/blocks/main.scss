@@ -86,6 +86,12 @@
     background-clip: content-box;
 
   }
+
+  .main__about-form {
+    width: 325px;
+
+    @include text(20px, 30px);
+  }
 }
 
 
