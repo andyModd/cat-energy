@@ -1,5 +1,7 @@
 .form-group-list {
   @include reset-list;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 
@@ -9,6 +11,59 @@
   }
 }
 
+.form-group-list__input-comment {
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+  padding: 15px;
+
+  @include text(16px, 18px);
+  font-weight: 400;
+  color: $black-lightest;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+}
+
+.form-group-list__checkmark {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  margin-right: 16px;
+
+  border: 1px solid #cdcdcd;
+}
+
+.form-group-list__checkbox {
+  display: none;
+
+  &:checked + .form-group-list__checkmark {
+
+  background: url('../img/icon-tick.svg') no-repeat 50% 50%;
+  background-size: 17px 22px;
+  }
+
+}
+
+.form-group-list__radiomark {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 9px;
+  margin-right: 16px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.form-group-list__radio {
+  display: none;
+
+  &:checked + .form-group-list__radiomark {
+    background: $green;
+    background-clip: content-box;
+  }
+}
 .form-group-list__title {
   display: flex;
   flex-direction: row;
@@ -17,8 +72,8 @@
   @include text(16px, 18px);
   color: $black-light;
   text-transform: uppercase;
-}
 
+}
 .form-group-list__input {
   flex-grow: 1;
   padding: 15px;

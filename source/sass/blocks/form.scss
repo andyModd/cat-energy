@@ -1,3 +1,9 @@
 .form__required {
   @include text(14px, 16px);
 }
+
+.form__link {
+  width: 100%;
+
+  border: none;
+}
