@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header header--theme-contrast header--reset-layout">
-      <div class="header__container container">
+      <div class="header__container container container--reset">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html">
             <img class="header__logo-img header__logo-img--resize" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Логотип сайта Кэт Энерджи">
@@ -19,8 +19,8 @@
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="navigation__item"><a class="navigation__link navigation__link--active">Подбор программы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="catalogw.html">Каталог продукции</a></li>
+            <li class="navigation__item"><a class="navigation__link  navigation__link--active">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
@@ -28,7 +28,7 @@
 
     <main class="main">
       <div class="main__container container">
-        <h1 class="main__title main-title">Подбор программы</h1>
+        <h1 class="main__title main-title main__title--padding-reset">Подбор программы</h1>
         <p class="main__about-form">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="main__form form" action="https://echo.htmlacademy.ru" method="post">
 
@@ -40,20 +40,23 @@
                 <li class="form-group-list__item"><label class="form-group-list__title">Возраст(лет):<input  class="form-group-list__input" type="number" name="age"></label></li>
               </ul>
           </fieldset>
+      </div>
 
           <fieldset class="form__group form-group">
-            <h2 class="form-group__title visually-hidden">Цель программы</h2>
-            <ul class="form-group__list form-group-list">
-              <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input" type="radio" name="goal" value="Похудение">Похудение</label>
-              </li>
-              <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input" type="radio" name="goal" value="Набор массы">Набор массы</label>
-              </li>
-              <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input" type="radio" name="goal" value="Не знаю (Нужен ваш совет)">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
+            <div class="form-group__container container">
+              <h2 class="form-group__title visually-hidden">Цель программы</h2>
+              <ul class="form-group__list form-group-list">
+                <li class="form-group-list__item">
+                  <label class="form-group-list__title"><input class="form-group-list__input" type="radio" name="goal" value="Похудение">Похудение</label>
+                </li>
+                <li class="form-group-list__item">
+                  <label class="form-group-list__title"><input class="form-group-list__input" type="radio" name="goal" value="Набор массы">Набор массы</label>
+                </li>
+                <li class="form-group-list__item">
+                  <label class="form-group-list__title"><input class="form-group-list__input" type="radio" name="goal" value="Не знаю (Нужен ваш совет)">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
 
           <fieldset class="form_group form-group">

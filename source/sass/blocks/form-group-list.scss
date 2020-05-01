@@ -2,12 +2,31 @@
   @include reset-list;
 }
 
+
+.form-group-list__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
 .form-group-list__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   @include text(16px, 18px);
   color: $black-light;
   text-transform: uppercase;
 }
 
 .form-group-list__input {
+  flex-grow: 1;
+  padding: 15px;
+  height: 45px;
+  margin-left: 15px;
+  box-sizing: border-box;
+
   text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
 }
