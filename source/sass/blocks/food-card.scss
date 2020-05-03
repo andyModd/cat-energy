@@ -90,5 +90,12 @@
 @media (min-width: $desktop-width) {
   .food-card {
     width: 165px;
+    &:nth-child(even) {
+
+      .food-card__img-link {
+        margin-left: -15px;
+      }
+    }
+
   }
 }

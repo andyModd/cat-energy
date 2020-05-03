@@ -14,9 +14,6 @@
   color: $black-lightest;
 }
 
-.extra-card__link {
-  width: 100%;
-}
 
 @media (min-width: $tablet-width) {
   .extra-card__name {
@@ -48,9 +45,5 @@
   .extra-card__price {
     margin: 0;
     margin-right: 40px;
-  }
-
-  .extra-card__link {
-    width: 245px;
   }
 }

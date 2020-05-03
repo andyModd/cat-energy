@@ -1,5 +1,6 @@
 .link {
   display: block;
+  width: 100%;
   padding: 11px 0;
 
   @include text(14px, 18px);
@@ -13,5 +14,13 @@
     background-color: $button-gray;
     color: $black-lightest;
   }
+}
 
+
+@media (min-width: $desktop-width) {
+  .link {
+    &--less-wide {
+      width: 245px;
+    }
+  }
 }

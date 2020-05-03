@@ -1,16 +1,9 @@
-
 .container {
   padding: 0 20px;
   margin: auto;
   width: 280px;
 
   outline: 1px solid red;
-
-  &--reset {
-    padding: 0;
-    margin: 0;
-    width: auto;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -18,11 +11,6 @@
     padding: 0 30px;
     margin: auto;
     width: 708px;
-
-    &--change-layout {
-      padding: 0 70px;
-      width: 628px;
-    }
   }
 }
 

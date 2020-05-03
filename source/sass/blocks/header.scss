@@ -1,16 +1,12 @@
 .header {
-  margin-bottom: 22px;
-
   @include text(20px, 20px);
   font-weight: 500;
   color: $black;
-
-  &--reset-layout {
-    margin-bottom: 0;
-  }
 }
 
 .header__container {
+  padding: 0;
+  width: auto;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -80,32 +76,32 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    margin-bottom: 0;
-
     @include text(18px, 20px);
     font-weight: 400;
     color: $black-light;
     text-align: left;
+  }
 
+  .header__container {
+    padding: 0 30px;
+    width: 708px;
+    margin: auto;
 
-      &--theme-contrast {
-        color: $black;
-      }
-
+    border: none;
   }
 
   .header__title {
     width: 420px;
-    padding: 0;
-    margin-left: 90px;
+    padding-left: 90px;
+    margin-bottom: 33px;
 
     @include text(60px, 60px);
     color: $black;
   }
 
   .header__slogan {
-    padding: 0;
-    margin-left: 90px;
+
+    padding-left: 90px;
     margin-bottom: 40px;
 
     @include text(20px, 20px);
@@ -117,6 +113,7 @@
   }
 
   .header__promo-container {
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -160,8 +157,6 @@
 }
   @media (min-width: $desktop-width) {
     .header {
-      margin-bottom: 80px;
-
       @include text(20px, 25px);
       color: $white;
 
@@ -174,10 +169,12 @@
         background: transparent;
         color: $black;
       }
+    }
 
-      &--reset-layout {
-        margin-bottom: 0;
-      }
+    .header__container {
+      padding: 0 40px;
+      width: 1220px;
+      margin: auto;
     }
 
     .header__promo-container {

@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header header--theme-contrast header--reset-layout">
-      <div class="header__container container container--reset">
+    <header class="header header--theme-contrast">
+      <div class="header__container container">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html">
             <img class="header__logo-img header__logo-img--resize" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Логотип сайта Кэт Энерджи">
@@ -16,7 +16,7 @@
           <button class="header__menu-button" type="button">Открыть меню</button>
         </div>
 
-        <nav class="header__navigation navigation">
+        <nav class="header__navigation navigation navigation--active-contrast">
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
             <li class="navigation__item"><a class="navigation__link navigation__link--active">Каталог продукции</a></li>
@@ -27,7 +27,7 @@
     </header>
 
     <main class="main">
-      <div class="main__container container container--reset">
+      <div class="main__container container">
         <h1 class="main__title main-title">Каталог продукции</h1>
         <div class="main__food-card-list food-card-list">
           <article class="food-card-list__food-card food-card">
@@ -204,56 +204,57 @@
             <a class="see-more__link link link--theme-gray" href="#">Показать все</a>
           </div>
         </div>
-      </div>
-      <div class="main__wrapper">
-        <section class="main__extra extra">
-          <h2 class="extra__title title">Дополнительные товары</h2>
-          <ul class="extra__list container">
-            <li class="extra__item extra-card">
-              <p class="extra-card__name">Сахарозаменитель</p>
-              <p class="extra-card__amount">1 упаковка (100 г)</p>
-              <p class="extra-card__price">200 Р.</p>
-              <a class="extra-card__link link" href="">Заказать</a>
-            </li>
-            <li class="extra__item extra-card">
-              <p class="extra-card__name">Питьевая вода</p>
-              <p class="extra-card__amount">5 литров</p>
-              <p class="extra-card__price">50 Р.</p>
-              <a class="extra-card__link link" href="">Заказать</a>
-            </li>
-            <li class="extra__item extra-card">
-              <p class="extra-card__name">Молоко</p>
-              <p class="extra-card__amount">1 литр</p>
-              <p class="extra-card__price">100 Р.</p>
-              <a class="extra-card__link link" href="">Заказать</a>
-            </li>
-            <li class="extra__item extra-card">
-              <p class="extra-card__name">Витамины</p>
-              <p class="extra-card__amount">1 упаковка (30 г)</p>
-              <p class="extra-card__price">300 Р.</p>
-              <a class="extra-card__link link" href="">Заказать</a>
-            </li>
-          </ul>
-        </section>
+        <div class="main__box">
+          <section class="main__extra extra">
+            <h2 class="extra__title title">Дополнительные товары</h2>
+            <ul class="extra__list">
+              <li class="extra__item extra-card">
+                <p class="extra-card__name">Сахарозаменитель</p>
+                <p class="extra-card__amount">1 упаковка (100 г)</p>
+                <p class="extra-card__price">200 Р.</p>
+                <a class="extra-card__link link  link--less-wide" href="">Заказать</a>
+              </li>
+              <li class="extra__item extra-card">
+                <p class="extra-card__name">Питьевая вода</p>
+                <p class="extra-card__amount">5 литров</p>
+                <p class="extra-card__price">50 Р.</p>
+                <a class="extra-card__link link  link--less-wide" href="">Заказать</a>
+              </li>
+              <li class="extra__item extra-card">
+                <p class="extra-card__name">Молоко</p>
+                <p class="extra-card__amount">1 литр</p>
+                <p class="extra-card__price">100 Р.</p>
+                <a class="extra-card__link link link--less-wide" href="">Заказать</a>
+              </li>
+              <li class="extra__item extra-card">
+                <p class="extra-card__name">Витамины</p>
+                <p class="extra-card__amount">1 упаковка (30 г)</p>
+                <p class="extra-card__price">300 Р.</p>
+                <a class="extra-card__link link link--less-wide" href="">Заказать</a>
+              </li>
+            </ul>
+          </section>
 
-        <section class="main__special-promo special-promo container">
-          <h2 class="special-promo__title visually-hidden">Бонусная система</h2>
-          <p class="special-promo__about">Закажите все и получите чехол для кота в подарок!</p>
-        </section>
+          <section class="main__special-promo special-promo">
+            <h2 class="special-promo__title visually-hidden">Бонусная система</h2>
+            <p class="special-promo__about">Закажите все и получите чехол для кота в подарок!</p>
+          </section>
+        </div>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="container">
         <section class="footer__on-map on-map">
           <h2 class="on-map__title visually-hidden">Кэт Энерджи на карте</h2>
-          <div class="on-map__wrapper  on-map__wrapper--theme-light">
-            <p class="on-map__cooperation">приглашаем к сотрудничеству дилеров!</p>
-            <p class="on-map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="on-map__wrapper">
+            <div class="on-map__container container">
+              <p class="on-map__cooperation">приглашаем к сотрудничеству дилеров!</p>
+              <p class="on-map__address">ул. Большая Конюшенная, д. 19/8 <span class="on-map__wrap">Санкт-Петербург</span></p>
+            </div>
           </div>
           <img class="on-map__img" src="https://via.placeholder.com/150x150" width="320" height="400" alt="Кэт Энерджи на карте">
         </section>
-        <div class="footer__wrapper">
+        <div class="footer__wrapper container">
           <a class="footer__logo">
             <img class="footer__logo-img" src="https://via.placeholder.com/150x150" width="128" height="24" alt="Логотип сайта Кэт Энерджи">
           </a>
@@ -267,7 +268,6 @@
             <img class="made-by__logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип Html Academy">
           </a>
         </div>
-      </div>
     </footer>
   </body>
 </html>

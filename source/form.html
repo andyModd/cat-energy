@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header header--theme-contrast header--reset-layout">
-      <div class="header__container container container--reset">
+    <header class="header header--theme-contrast">
+      <div class="header__container container">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html">
             <img class="header__logo-img header__logo-img--resize" src="https://via.placeholder.com/150x150" width="191" height="39" alt="Логотип сайта Кэт Энерджи">
@@ -16,7 +16,7 @@
           <button class="header__menu-button" type="button">Открыть меню</button>
         </div>
 
-        <nav class="header__navigation navigation">
+        <nav class="header__navigation navigation navigation--active-contrast">
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
             <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
@@ -27,78 +27,68 @@
     </header>
 
     <main class="main">
-      <div class="main__container container container--change-layout">
-        <h1 class="main__title main-title main__title--padding-reset">Подбор программы</h1>
+      <div class="main__container container">
+        <h1 class="main__title main-title">Подбор программы</h1>
         <p class="main__about-form">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      </div>
         <form class="main__form form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__wrapper container container--reset">
-            <div class="form__container container">
-              <fieldset class="form__group form-group form__group--change-width form__group--change-layout">
-                <h2 class="form-group__title visually-hidden">Информация о коте</h2>
-                <ul class="form-group__list form-group-list">
-                  <li class="form-group-list__item"><label class="form-group-list__title">Имя:*<input  class="form-group-list__input" type="text" name="name"></label></li>
-                  <li class="form-group-list__item"><label class="form-group-list__title">Вес(кг):<input  class="form-group-list__input" type="number" name="weight"></label></li>
-                  <li class="form-group-list__item"><label class="form-group-list__title">Возраст(лет):<input  class="form-group-list__input" type="number" name="age"></label></li>
-                </ul>
-              </fieldset>
-            </div>
-
-            <fieldset class="form__group form-group form__group--change-width">
-              <div class="form-group__container container form-group__container--change-layout">
-                <h2 class="form-group__title visually-hidden">Цель программы</h2>
-                <ul class="form-group__list form-group-list form-group-list--accent">
-                  <li class="form-group-list__item">
-                    <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Похудение"><span class="form-group-list__radiomark"></span>Похудение</label>
-                  </li>
-                  <li class="form-group-list__item">
-                    <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Набор массы"><span class="form-group-list__radiomark"></span>Набор массы</label>
-                  </li>
-                  <li class="form-group-list__item">
-                    <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Не знаю (Нужен ваш совет)"><span class="form-group-list__radiomark"></span>Не знаю (Нужен ваш совет)</label>
-                  </li>
-                </ul>
-              </div>
-            </fieldset>
-          </div>
-          <fieldset class="form_group form-group">
-            <div class="form-group__container container container--change-layout">
-              <h2 class="form-group__title title">Контактные данные (владельца кота)</h2>
-              <ul class="form-group__list form-group-list form-group-list--change-layout">
-                <li class="form-group-list__item form-group-list__item--change-layout"><label class="form-group-list__title form-group-list__title--change-width">E-mail:*<input class="form-group-list__input" type="email" name="email"></label></li>
-                <li class="form-group-list__item"><label class="form-group-list__title form-group-list__title--change-width">Телефон:*<input class="form-group-list__input" type="tel" name="tel"></label></li>
+          <fieldset class="form__group form-group">
+            <h2 class="form-group__title visually-hidden">Информация о коте</h2>
+            <ul class="form-group__list form-group-list">
+              <li class="form-group-list__item"><label class="form-group-list__title">Имя:*<input  class="form-group-list__input" type="text" name="name"></label></li>
+              <li class="form-group-list__item"><label class="form-group-list__title">Вес(кг):<input  class="form-group-list__input" type="number" name="weight"></label></li>
+              <li class="form-group-list__item"><label class="form-group-list__title">Возраст(лет):<input  class="form-group-list__input" type="number" name="age"></label></li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__group form-group form-group--accent">
+            <h2 class="form-group__title visually-hidden">Цель программы</h2>
+              <ul class="form-group__list form-group-list form-group-list--accent">
+                <li class="form-group-list__item">
+                  <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Похудение"><span class="form-group-list__radiomark"></span>Похудение</label>
+                </li>
+                <li class="form-group-list__item">
+                  <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Набор массы"><span class="form-group-list__radiomark"></span>Набор массы</label>
+                </li>
+                <li class="form-group-list__item">
+                  <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Не знаю (Нужен ваш совет)"><span class="form-group-list__radiomark"></span>Не знаю (Нужен ваш совет)</label>
+                </li>
               </ul>
-            </div>
           </fieldset>
 
-          <div class="main__box container container--change-layout">
-            <fieldset class="form__group form-group">
-              <h2 class="form-group_title title">Комментарий</h2>
-              <textarea class="form-group-list__input-comment" name="comment">Расскажите обо всех повадках кота</textarea>
-            </fieldset>
+          <fieldset class="form_group form-group">
+            <h2 class="form-group__title title">Контактные данные (владельца кота)</h2>
+            <ul class="form-group__list form-group-list form-group-list--change-layout">
+              <li class="form-group-list__item form-group-list__item--change-layout"><label class="form-group-list__title form-group-list__title--change-width">E-mail:*<input class="form-group-list__input" type="email" name="email"></label></li>
+              <li class="form-group-list__item"><label class="form-group-list__title form-group-list__title--change-width">Телефон:*<input class="form-group-list__input" type="tel" name="tel"></label></li>
+            </ul>
+          </fieldset>
 
-            <fieldset class="form__group form-group">
-              <h2 class="form-group__title title">Дополнительно</h2>
-              <ul class="form-group__list form-group-list form-group-list--row-layout">
-                <li class="form-group-list__item">
-                  <label class="form-group-list__title"><input class="form-group-list__checkbox" type="checkbox" name="sweetener" value="Сахарозаменитель"><span class="form-group-list__checkmark"></span>Сахарозаменитель</label>
-                </li>
-                <li class="form-group-list__item">
-                  <label class="form-group-list__title"><input class="form-group-list__checkbox" type="checkbox" name="water" value="Питьевая вода"><span class="form-group-list__checkmark"></span>Питьевая вода</label>
-                </li>
-                <li class="form-group-list__item">
-                  <label class="form-group-list__title"><input class="form-group-list__checkbox" type="checkbox" name="milk" value="Молоко"><span class="form-group-list__checkmark"></span>Молоко</label>
-                </li>
-                <li class="form-group-list__item">
-                  <label class="form-group-list__title"><input class="form-group-list__checkbox"  type="checkbox" name="vitamins" value="Витамины"><span class="form-group-list__checkmark"></span>Витамины</label>
-                </li>
-              </ul>
-            </fieldset>
+          <fieldset class="form__group form-group">
+            <h2 class="form-group_title title">Комментарий</h2>
+            <textarea class="form-group-list__input-comment" name="comment">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
 
-            <button class="form__link link" type="submit">Отправить заявку</button>
-            <p class="form__required">* — Обязательные поля</p>
-          </div>
+          <fieldset class="form__group form-group">
+            <h2 class="form-group__title title">Дополнительно</h2>
+            <ul class="form-group__list form-group-list form-group-list--row-layout">
+              <li class="form-group-list__item">
+                <label class="form-group-list__title"><input class="form-group-list__checkbox" type="checkbox" name="sweetener" value="Сахарозаменитель"><span class="form-group-list__checkmark"></span>Сахарозаменитель</label>
+              </li>
+              <li class="form-group-list__item">
+                <label class="form-group-list__title"><input class="form-group-list__checkbox" type="checkbox" name="water" value="Питьевая вода"><span class="form-group-list__checkmark"></span>Питьевая вода</label>
+              </li>
+              <li class="form-group-list__item">
+                <label class="form-group-list__title"><input class="form-group-list__checkbox" type="checkbox" name="milk" value="Молоко"><span class="form-group-list__checkmark"></span>Молоко</label>
+              </li>
+              <li class="form-group-list__item">
+                <label class="form-group-list__title"><input class="form-group-list__checkbox"  type="checkbox" name="vitamins" value="Витамины"><span class="form-group-list__checkmark"></span>Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="form__link link" type="submit">Отправить заявку</button>
+          <p class="form__required">* — Обязательные поля</p>
         </form>
+      </div>
     </main>
 
     <footer class="footer">
