@@ -10,10 +10,6 @@
   padding: 22.5px 0;
 
   border-top:1px solid $gray;
-
-  &:last-child {
-    border-bottom: 1px solid $gray;
-  }
 }
 
 @media (min-width: $tablet-width) {

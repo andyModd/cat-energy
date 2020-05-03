@@ -30,41 +30,43 @@
       <div class="main__container container container--change-layout">
         <h1 class="main__title main-title main__title--padding-reset">Подбор программы</h1>
         <p class="main__about-form">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <form class="main__form form" action="https://echo.htmlacademy.ru" method="post">
-
-          <fieldset class="form__group form-group">
-              <h2 class="form-group__title visually-hidden">Информация о коте</h2>
-              <ul class="form-group__list form-group-list">
-                <li class="form-group-list__item"><label class="form-group-list__title">Имя:*<input  class="form-group-list__input" type="text" name="name"></label></li>
-                <li class="form-group-list__item"><label class="form-group-list__title">Вес(кг):<input  class="form-group-list__input" type="number" name="weight"></label></li>
-                <li class="form-group-list__item"><label class="form-group-list__title">Возраст(лет):<input  class="form-group-list__input" type="number" name="age"></label></li>
-              </ul>
-          </fieldset>
       </div>
-
-          <fieldset class="form__group form-group">
-            <div class="form-group__container container container--change-layout">
-              <h2 class="form-group__title visually-hidden">Цель программы</h2>
-              <ul class="form-group__list form-group-list form-group-list--accent">
-                <li class="form-group-list__item">
-                  <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Похудение"><span class="form-group-list__radiomark"></span>Похудение</label>
-                </li>
-                <li class="form-group-list__item">
-                  <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Набор массы"><span class="form-group-list__radiomark"></span>Набор массы</label>
-                </li>
-                <li class="form-group-list__item">
-                  <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Не знаю (Нужен ваш совет)"><span class="form-group-list__radiomark"></span>Не знаю (Нужен ваш совет)</label>
-                </li>
-              </ul>
+        <form class="main__form form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__wrapper container container--reset">
+            <div class="form__container container">
+              <fieldset class="form__group form-group form__group--change-width form__group--change-layout">
+                <h2 class="form-group__title visually-hidden">Информация о коте</h2>
+                <ul class="form-group__list form-group-list">
+                  <li class="form-group-list__item"><label class="form-group-list__title">Имя:*<input  class="form-group-list__input" type="text" name="name"></label></li>
+                  <li class="form-group-list__item"><label class="form-group-list__title">Вес(кг):<input  class="form-group-list__input" type="number" name="weight"></label></li>
+                  <li class="form-group-list__item"><label class="form-group-list__title">Возраст(лет):<input  class="form-group-list__input" type="number" name="age"></label></li>
+                </ul>
+              </fieldset>
             </div>
-          </fieldset>
 
+            <fieldset class="form__group form-group form__group--change-width">
+              <div class="form-group__container container form-group__container--change-layout">
+                <h2 class="form-group__title visually-hidden">Цель программы</h2>
+                <ul class="form-group__list form-group-list form-group-list--accent">
+                  <li class="form-group-list__item">
+                    <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Похудение"><span class="form-group-list__radiomark"></span>Похудение</label>
+                  </li>
+                  <li class="form-group-list__item">
+                    <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Набор массы"><span class="form-group-list__radiomark"></span>Набор массы</label>
+                  </li>
+                  <li class="form-group-list__item">
+                    <label class="form-group-list__title"><input class="form-group-list__radio" type="radio" name="goal" value="Не знаю (Нужен ваш совет)"><span class="form-group-list__radiomark"></span>Не знаю (Нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="form_group form-group">
             <div class="form-group__container container container--change-layout">
               <h2 class="form-group__title title">Контактные данные (владельца кота)</h2>
-              <ul class="form-group__list form-group-list">
-                <li class="form-group-list__item"><label class="form-group-list__title">E-mail:*<input class="form-group-list__input" type="email" name="email"></label></li>
-                <li class="form-group-list__item"><label class="form-group-list__title">Телефон:*<input class="form-group-list__input" type="tel" name="tel"></label></li>
+              <ul class="form-group__list form-group-list form-group-list--change-layout">
+                <li class="form-group-list__item form-group-list__item--change-layout"><label class="form-group-list__title form-group-list__title--change-width">E-mail:*<input class="form-group-list__input" type="email" name="email"></label></li>
+                <li class="form-group-list__item"><label class="form-group-list__title form-group-list__title--change-width">Телефон:*<input class="form-group-list__input" type="tel" name="tel"></label></li>
               </ul>
             </div>
           </fieldset>
@@ -100,12 +102,13 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
         <section class="footer__on-map on-map">
           <h2 class="on-map__title visually-hidden">Кэт Энерджи на карте</h2>
           <div class="on-map__wrapper  on-map__wrapper--theme-light">
-            <p class="on-map__cooperation">приглашаем к сотрудничеству дилеров!</p>
-            <p class="on-map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <div class="on-map__container container">
+              <p class="on-map__cooperation">приглашаем к сотрудничеству дилеров!</p>
+              <p class="on-map__address">ул. Большая <span class="on-map__wrap">Конюшенная, д. 19/8</span><span class="on-map__wrap">Санкт-Петербург</span></p>
+            </div>
           </div>
           <img class="on-map__img" src="https://via.placeholder.com/150x150" width="320" height="400" alt="Кэт Энерджи на карте">
         </section>
@@ -123,7 +126,6 @@
             <img class="made-by__logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип Html Academy">
           </a>
         </div>
-      </div>
     </footer>
   </body>
 </html>

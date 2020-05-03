@@ -2,8 +2,53 @@
   @include text(14px, 16px);
 }
 
+.form__group {
+  margin: 0;
+}
+
 .form__link {
   width: 100%;
 
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    position: relative;
+  }
+
+  .form__link {
+    width: 283px;
+    padding: 16px 0;
+    @include text(20px, 20px);
+  }
+
+  .form__required {
+    position: absolute;
+    bottom: 0;
+    right: 225px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    display: flex;
+  }
+
+  .form__container {
+    padding: 0;
+    margin: 0;
+    margin-right: 80px;
+    width:auto;
+  }
+
+  .form__group {
+    &--change-width {
+      width: 570px;
+    }
+  }
+
+  .form__link {
+    width: 570px;
+  }
 }

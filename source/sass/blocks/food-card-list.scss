@@ -5,6 +5,8 @@
 .food-card-list__food-card {
   padding: 0 20px;
   padding-bottom: 25px;
+
+  border-top: $border;
 }
 
 @media (min-width: $tablet-width) {

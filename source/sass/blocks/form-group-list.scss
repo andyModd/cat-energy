@@ -1,7 +1,5 @@
 .form-group-list {
   @include reset-list;
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 
@@ -97,16 +95,61 @@
     &--row-layout {
       display: flex;
       flex-direction: row;
+      align-items: flex-start;
       flex-wrap: wrap;
       justify-content: space-between;
     }
 
     &--row-layout .form-group-list__item {
-      width: 50%;
+      width: 283px;
+
+      &:nth-child(odd) {
+        margin-right: 60px;
+      }
+
+      &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 32px;
+      }
     }
   }
 
   .form-group-list__title {
     @include text(20px, 20px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group-list {
+    padding: 0;
+    &--change-layout {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .form-group-list__title {
+    &--change-width {
+      width: 570px;
+    }
+  }
+
+  .form-group-list__item {
+    &--change-layout {
+      margin-right: 80px;
+    }
+  }
+
+  .form-group-list {
+    &--row-layout {
+      justify-content: flex-start;
+    }
+
+    &--row-layout .form-group-list__item {
+      width: 245px;
+
+      &:not(:nth-child(4n+4)) {
+        margin-right: 80px;
+      }
+    }
   }
 }
