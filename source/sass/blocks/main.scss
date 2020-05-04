@@ -2,24 +2,19 @@
   text-align: center;
 }
 
-.main__container {
+.main__c-container {
   padding: 0;
   width: 320px;
 }
 
-.main__link {
-  display: block;
-  margin-bottom: 22px;
-}
-
 .main__title {
   margin: 0;
-  padding: 30px 40px 30px 20px;
 }
 
 .main__about-form {
-  width: 226px;
-  margin-bottom: 20px;
+  width: 228px;
+  margin: 0;
+  margin-bottom: 69px;
   text-transform: uppercase;
   text-align: left;
 }
@@ -33,19 +28,8 @@
 }
 
 .main__promo {
+  padding-top: 33px;
   background: $gray-light;
-}
-
-.main__special-promo {
-  min-height: 289px;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-
-  background: $green url('../img/gift-photo-mobile@1x.jpg') no-repeat center top;
-  background-clip: content-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,20 +39,13 @@
     background: $white;
   }
 
-  .main__container {
+  .main__c-container {
     padding: 0 30px;
     width: 708px;
-    margin: auto;
   }
 
   .main__food-types {
     margin-bottom: 50px;
-  }
-
-  .main__title {
-    padding: 66px 0 156px 0;
-    padding-top: 66px;
-    padding-bottom: 156px;
   }
 
   .main__catalog-title {
@@ -77,20 +54,10 @@
 
   .main__promo {
     padding-top: 50px;
+    padding-bottom: 68px;
     box-sizing: border-box;
 
-    background: linear-gradient($white 619px, $gray 619px);
-  }
-
-  .main__special-promo {
-    margin-bottom: 76px;
-    min-height: 200px;
-    justify-content: center;
-    align-items: flex-end;
-
-    background: $green url('../img/gift-photo-tablet@1x.jpg') no-repeat center top;
-    background-clip: border-box;
-
+    background: linear-gradient($white 619px, $gray-light 619px);
   }
 
   .main__about-form {
@@ -101,24 +68,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main__container {
-    position: relative;
+  .main__promo {
+    background: linear-gradient($white 150px, $gray-light 150px);
+  }
+
+  .main__c-container {
     padding: 0 40px;
     width: 1220px;
   }
 
   .main__box {
-    @include flex(row, flex-end);
+    @include flex(row);
+    align-items: flex-end;
   }
 
   .main__extra {
     margin-right: 80px;
-  }
-
-  .main__title{
-    padding-top: 83px;
-
-    border: none;
   }
 
   .main__food-types {
@@ -128,19 +93,5 @@
 
   .main__wrapper {
     position: relative;
-  }
-
-  .main__special-promo {
-    min-height: 289px;
-    width: 245px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-
-    background: $green url('../img/gift-photo-desktop@1x.jpg') no-repeat center top;
-    background-clip: content-box;
   }
 }

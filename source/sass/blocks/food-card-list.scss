@@ -3,14 +3,9 @@
 }
 
 .food-card-list__food-card {
+  margin: 0 -20px;
   padding: 0 20px;
   padding-bottom: 25px;
-
-  border-top: 1px solid #ededed;
-
-  &:last-child {
-    border-bottom: 1px solid #ededed;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -22,6 +17,7 @@
   }
 
   .food-card-list__food-card {
+    margin: 0;
     padding: 0 40px 40px;
 
     &:not(:nth-child(2n+2)) {

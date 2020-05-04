@@ -1,9 +1,12 @@
 .form-group {
-  padding: 0;
-
   text-align: left;
+  @include text(16px, 18px);
+  color: $black-light;
+}
 
-  border: none;
+.form-group__title {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 

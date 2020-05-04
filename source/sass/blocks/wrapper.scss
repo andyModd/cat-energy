@@ -1,7 +1,6 @@
 .wrapper {
-  position: relative;
-
   width: 124px;
+  @include flex(column);
   box-sizing: border-box;
 
   border-radius: 3px;
@@ -9,11 +8,8 @@
 }
 
 .wrapper__title {
-  position: absolute;
-  bottom: -10px;
-  left: calc(50% - 43.5px);
-
   margin: 0;
+  margin-bottom: -15px;
   padding: 0 8px;
   width: 87px;
   box-sizing: border-box;
@@ -26,6 +22,9 @@
 }
 
 .wrapper__paragraph {
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 7px;
   @include text(24px, 24px);
   color: $black;
 }
@@ -36,17 +35,21 @@
   }
 
   .wrapper__paragraph {
-    text-align: center;
+    margin-bottom: 15px;
   }
 
   .wrapper__title {
-    bottom: -5px;
-
     width: auto;
+    margin-bottom: -5px;
 
-    word-spacing: normal;
     @include text(14px, 14px);
 
     background: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper__title {
+    background: $gray-light;
   }
 }

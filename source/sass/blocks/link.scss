@@ -1,9 +1,9 @@
 .link {
   display: block;
-  width: 100%;
   padding: 11px 0;
 
-  @include text(14px, 18px);
+  @include text(16px, 20px);
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: $white;
@@ -16,11 +16,6 @@
   }
 }
 
-
-@media (min-width: $desktop-width) {
-  .link {
-    &--less-wide {
-      width: 245px;
-    }
-  }
+@media (min-width: $tablet-width) {
+  @include text(20px, 20px);
 }

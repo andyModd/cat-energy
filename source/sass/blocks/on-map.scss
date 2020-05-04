@@ -40,22 +40,20 @@
 
 @media (min-width: $tablet-width) {
   .on-map__container {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 70px;
+    width: 628px;
     justify-content: space-between;
     align-items: center;
   }
 
   .on-map__cooperation {
     margin: 0;
-    margin-left: 40px;
   }
 
   .on-map__address {
     width: 153px;
     min-height: 76px;
     align-items: flex-end;
-    margin-right: 40px;
 
     text-align: right;
   }
@@ -67,5 +65,23 @@
 }
   .on-map__img {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .on-map {
+    position: relative;
+  }
+
+  .on-map__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+
+  .on-map__container {
+    padding: 66px 90px 59px 76px;
+    width: 570px;
+    box-sizing: border-box;
   }
 }

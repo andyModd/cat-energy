@@ -17,34 +17,33 @@
 
 @media (min-width: $tablet-width) {
   .promo__result {
+    margin-bottom: 255px;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 82px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__about {
     width: 432px;
-    margin-bottom: 70px;
+    margin-bottom: -70px;
+  }
+
+  .promo__box {
+    @include flex(row);
+  }
+
+  .promo__slider {
+    flex-grow: 1;
   }
 
   .promo__result {
     flex-wrap: wrap;
+    margin-bottom: 0;
     width: 570px;
   }
 
   .promo__subtitle {
     width: 570px;
-  }
-
-  .promo__container {
-    position: relative;
-  }
-
-  .promo__slider {
-    position: absolute;
-    bottom: 0;
-    right: 0;
   }
 }

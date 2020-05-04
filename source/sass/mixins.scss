@@ -10,9 +10,7 @@
   list-style: none;
 }
 
-@mixin flex($flex-direction, $align-items, $justify-content: flex-start) {
+@mixin flex($flex-direction) {
   display: flex;
-  justify-content: $justify-content;
-  align-items: $align-items;
   flex-direction: $flex-direction;
 }

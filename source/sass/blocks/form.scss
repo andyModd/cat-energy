@@ -3,7 +3,18 @@
 }
 
 .form__group {
-  margin: 0;
+  margin: 30px 0;
+  padding: 0;
+
+  border: none;
+
+  &--full-width {
+    margin: 0 -20px;
+    padding: 20px;
+
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
 }
 
 .form__link {
@@ -13,20 +24,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form {
-    position: relative;
-  }
-
   .form__link {
     width: 283px;
     padding: 16px 0;
     @include text(20px, 20px);
-  }
-
-  .form__required {
-    position: absolute;
-    bottom: 0;
-    right: 225px;
   }
 }
 

@@ -5,10 +5,11 @@
 }
 
 .result__paragraph {
-  margin-top: 20px;
+  margin-top: 38px;
   margin-bottom: 44px;
 
   @include text(14px, 20px);
+  text-transform: uppercase;
   color: $black;
 }
 
@@ -20,21 +21,6 @@
     display:flex;
     flex-direction: column;
     align-items: flex-end;
-  }
-
-  .result__wrapper {
-    &:not(:last-of-type) {
-      margin-right: 42px;
-    }
-
-    &:first-of-type .wrapper__title {
-      left: 24px;
-    }
-
-
-    &:last-of-type .wrapper__title {
-      left: 10px;
-    }
   }
 }
 

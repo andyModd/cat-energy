@@ -1,5 +1,7 @@
 .food-info {
   font-family: $secondary-font;
+  @include text(12px, 16px);
+  color: $black-lightest;
 }
 
 .food-info__heading {
@@ -14,5 +16,14 @@
 @media (min-width: $tablet-width) {
   .food-info {
     width: 100%;
+
+    border-spacing: 0;
+
+    @include  text(16px, 16px);
+  }
+
+  .food-info__date,
+  .food-info__heading {
+    border-bottom: 1px solid $gray-dark;
   }
 }
