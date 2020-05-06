@@ -84,27 +84,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form-group-list {
-
-    &--row-layout {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    &--row-layout .form-group-list__item {
-      width: 283px;
-
-      &:nth-child(odd) {
-        margin-right: 60px;
-      }
-
-      &:not(:nth-last-child(-n+2)) {
-        margin-bottom: 32px;
-      }
-    }
+  .form-group-list__input {
+    height: 52px;
+    padding: 17px 20px;
   }
 
   .form-group-list__item {
@@ -115,43 +97,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-group-list {
-    padding: 0;
-    &--change-layout {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-
   .form-group-list__checkmark {
     width: 40px;
     height: 40px;
     padding: 11px;
-  }
-
-  .form-group-list__title {
-    &--change-width {
-      width: 570px;
-    }
-  }
-
-  .form-group-list__item {
-    &--change-layout {
-      margin-right: 80px;
-    }
-  }
-
-  .form-group-list {
-    &--row-layout {
-      justify-content: flex-start;
-    }
-
-    &--row-layout .form-group-list__item {
-      width: 245px;
-
-      &:not(:nth-child(4n+4)) {
-        margin-right: 80px;
-      }
-    }
   }
 }

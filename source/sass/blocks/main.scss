@@ -2,13 +2,13 @@
   text-align: center;
 }
 
-.main__c-container {
-  padding: 0;
-  width: 320px;
+.main__container {
+  padding-bottom: 34px;
 }
 
 .main__title {
   margin: 0;
+  margin-bottom: 35px;
 }
 
 .main__about-form {
@@ -28,8 +28,15 @@
 }
 
 .main__promo {
-  padding-top: 33px;
   background: $gray-light;
+}
+
+.main__food-card-list {
+  margin-bottom: 30px;
+}
+
+.main__extra {
+  margin-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
@@ -39,9 +46,12 @@
     background: $white;
   }
 
-  .main__c-container {
-    padding: 0 30px;
-    width: 708px;
+  .main__title {
+    margin-bottom: 53px;
+  }
+
+  .main__container {
+    padding-bottom: 72px;
   }
 
   .main__food-types {
@@ -53,8 +63,6 @@
   }
 
   .main__promo {
-    padding-top: 50px;
-    padding-bottom: 68px;
     box-sizing: border-box;
 
     background: linear-gradient($white 619px, $gray-light 619px);
@@ -66,6 +74,10 @@
 
     @include text(20px, 30px);
   }
+
+  .main__extra {
+    margin-bottom: 69px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -73,9 +85,12 @@
     background: linear-gradient($white 150px, $gray-light 150px);
   }
 
-  .main__c-container {
-    padding: 0 40px;
-    width: 1220px;
+  .main__container {
+    padding-bottom: 90px;
+  }
+
+  .main__about-form {
+    padding-left: 0;
   }
 
   .main__box {
@@ -94,5 +109,13 @@
 
   .main__wrapper {
     position: relative;
+  }
+
+  .main__extra {
+    margin-bottom: 0;
+  }
+
+  .main__food-card-list {
+    margin-bottom: 79px;
   }
 }

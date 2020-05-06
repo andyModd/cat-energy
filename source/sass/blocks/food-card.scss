@@ -46,7 +46,7 @@
     align-items: center;
     justify-content: space-between;
     width: 324px;
-    min-height: 432px;
+    min-height: 478px;
 
     @include text(20px, 20px);
 
@@ -54,7 +54,12 @@
       border: none;
     }
 
-    background: $gray;
+    background: linear-gradient($white 46px, $gray 46px);
+
+    &--more-tall {
+      min-height: 513px;
+      background: linear-gradient($white 82px, $gray 82px);
+    }
 
 
     &:nth-of-type(odd) .food-card__img {
@@ -65,14 +70,6 @@
     &:nth-of-type(2n) .food-card__img {
       width: 195px;
       height: 208px;
-    }
-
-    &:nth-of-type(odd) .food-card__img-link {
-      margin-top: -46px;
-    }
-
-    &:nth-of-type(2n) .food-card__img-link {
-      margin-top: -82px;
     }
   }
 

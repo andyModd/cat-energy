@@ -1,18 +1,20 @@
 .food-card-list {
-  @include reset-list;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+
+  list-style: none;
 }
 
 .food-card-list__food-card {
-  margin: 0 -20px;
-  padding: 0 20px;
+  @include full-width();
   padding-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .food-card-list {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    @include flex(row);
+    align-items: flex-end;
     flex-wrap: wrap;
   }
 
@@ -25,7 +27,7 @@
     }
 
     &:not(:nth-last-child(-n+2)) {
-      margin-bottom: 140px;
+      margin-bottom: 58px;
     }
   }
 }

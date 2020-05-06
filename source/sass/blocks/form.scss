@@ -5,18 +5,30 @@
 }
 
 .form__group {
-  margin: 30px 0;
+  margin: 0;
+  margin-bottom: 30px;
   box-sizing: border-box;
   padding: 0;
 
   border: none;
 
   &--accent {
-    margin: 0 -20px;
-    padding: 20px;
+    @include full-width();
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     border-top: 1px solid #ededed;
     border-bottom: 1px solid #ededed;
+  }
+
+  &--accent .form-group-list__item {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &--parameters {
+    margin-bottom: 23px;
   }
 }
 
@@ -32,15 +44,46 @@
   .form__group {
     padding-left: 40px;
     padding-right: 35px;
+    margin-bottom: 70px;
 
     &--accent {
       margin: 0;
+      margin-bottom: 79px;
       margin-left: 40px;
       margin-right: 35px;
       padding: 25px 28px;
 
       border: 1px solid #ededed;
     }
+
+    &--row-layout .form-group-list {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &--row-layout .form-group-list__item {
+      width: 283px;
+
+      &:nth-child(odd) {
+        margin-right: 60px;
+      }
+
+      &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &--parameters {
+      margin-bottom: 72px;
+    }
+
+    &--row-layout {
+      margin-bottom: 54px;
+    }
+
   }
 
   .form__link {
@@ -58,27 +101,64 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .form__container {
-    @include flex(row);
+    margin-bottom: 73px;
   }
 
   .form__group {
-    margin: 0;
     padding: 0;
 
-    &--half-width {
+    &--change-layout .form-group-list {
+      @include flex(row);
+    }
+    &--change-layout .form-group-list__item {
+      width: 570px;
+
+      &:not(:last-child) {
+        margin-right: 80px;
+        margin-bottom: 0;
+      }
+    }
+
+    &--parameters {
       width: 570px;
       margin-right: 80px;
+      margin-bottom: 0;
     }
 
     &--accent {
       padding: 25px 28px;
       width: 570px;
+      margin: 0;
     }
+
+    &--row-layout {
+      margin-bottom: 61px;
+    }
+
+    &--row-layout .form-group-list {
+      justify-content: flex-start;
+    }
+
+    &--row-layout .form-group-list__item {
+      width: 245px;
+
+      &:nth-child(n+1) {
+        margin-bottom: 0;
+      }
+
+      &:not(:nth-child(4n+4)) {
+        margin-right: 80px;
+      }
+    }
+  }
+
+  .form__container {
+    @include flex(row);
   }
 
   .form__link {
     width: 570px;
+    margin-right: 82px;
   }
 }

@@ -10,6 +10,12 @@
 }
 
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
+  .form-group__title {
+    margin-bottom: 70px;
 
+    &--margin-less {
+      margin-bottom: 53px;
+    }
+  }
 }
