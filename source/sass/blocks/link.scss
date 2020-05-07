@@ -2,7 +2,8 @@
   display: block;
   padding: 11px 0;
 
-  @include text(14px, 18px);
+  @include text(16px, 20px);
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: $white;
@@ -13,5 +14,8 @@
     background-color: $button-gray;
     color: $black-lightest;
   }
+}
 
+@media (min-width: $tablet-width) {
+  @include text(20px, 20px);
 }

@@ -2,12 +2,104 @@
   @include reset-list;
 }
 
-.form-group-list__title {
-  @include text(16px, 18px);
-  color: $black-light;
-  text-transform: uppercase;
+.form-group-list__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
 }
 
 .form-group-list__input {
+  flex-grow: 1;
+  padding: 15px;
+  margin-left: 15px;
+  height: 45px;
+  box-sizing: border-box;
+
+  @include text(16px, 18px);
+  color: $black-lightest;
   text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+}
+
+.form-group-list__input-comment {
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+  padding: 15px;
+
+  @include text(16px, 18px);
+  font-weight: 400;
+  color: $black-lightest;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+}
+
+.form-group-list__checkmark {
+  width: 30px;
+  height: 30px;
+  padding: 9px;
+  box-sizing: border-box;
+  margin-right: 16px;
+
+  border: 1px solid #cdcdcd;
+
+  &--circle-shape {
+    border-radius: 50%;
+  }
+}
+
+.form-group-list__check {
+  display: none;
+
+  &:checked + .form-group-list__checkmark {
+
+    background: url('../img/icon-tick.svg') no-repeat 50% 50%;
+    background-size: 17px 22px;
+  }
+
+  &:checked + .form-group-list__checkmark--circle-shape {
+
+    background: $green;
+    background-clip: content-box;
+  }
+}
+
+.form-group-list__radio {
+  display: none;
+
+  &:checked + .form-group-list__radiomark {
+
+  }
+}
+.form-group-list__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: $black-light;
+  text-transform: uppercase;
+
+}
+
+@media (min-width: $tablet-width) {
+  .form-group-list__input {
+    height: 52px;
+    padding: 17px 20px;
+  }
+
+  .form-group-list__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group-list__checkmark {
+    width: 40px;
+    height: 40px;
+    padding: 11px;
+  }
 }

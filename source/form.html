@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header header--theme-contrast header--reset-layout">
+    <header class="header header--theme-contrast">
       <div class="header__container container">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html">
@@ -16,11 +16,11 @@
           <button class="header__menu-button" type="button">Открыть меню</button>
         </div>
 
-        <nav class="header__navigation navigation">
+        <nav class="header__navigation navigation navigation--active-contrast">
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
             <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="navigation__item"><a class="navigation__link navigation__link--active">Подбор программы</a></li>
+            <li class="navigation__item"><a class="navigation__link  navigation__link--active">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
@@ -31,32 +31,32 @@
         <h1 class="main__title main-title">Подбор программы</h1>
         <p class="main__about-form">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="main__form form" action="https://echo.htmlacademy.ru" method="post">
-
-          <fieldset class="form__group form-group">
+          <div class="form__container">
+            <fieldset class="form__group form-group form__group--parameters">
               <h2 class="form-group__title visually-hidden">Информация о коте</h2>
               <ul class="form-group__list form-group-list">
                 <li class="form-group-list__item"><label class="form-group-list__title">Имя:*<input  class="form-group-list__input" type="text" name="name"></label></li>
                 <li class="form-group-list__item"><label class="form-group-list__title">Вес(кг):<input  class="form-group-list__input" type="number" name="weight"></label></li>
                 <li class="form-group-list__item"><label class="form-group-list__title">Возраст(лет):<input  class="form-group-list__input" type="number" name="age"></label></li>
               </ul>
-          </fieldset>
+            </fieldset>
+            <fieldset class="form__group form-group form__group--accent">
+              <h2 class="form-group__title visually-hidden">Цель программы</h2>
+                <ul class="form-group__list form-group-list">
+                  <li class="form-group-list__item">
+                    <label class="form-group-list__title"><input class="form-group-list__check" type="radio" name="goal" value="Похудение"><span class="form-group-list__checkmark form-group-list__checkmark--circle-shape"></span>Похудение</label>
+                  </li>
+                  <li class="form-group-list__item">
+                    <label class="form-group-list__title"><input class="form-group-list__check" type="radio" name="goal" value="Набор массы"><span class="form-group-list__checkmark form-group-list__checkmark--circle-shape"></span>Набор массы</label>
+                  </li>
+                  <li class="form-group-list__item">
+                    <label class="form-group-list__title"><input class="form-group-list__check" type="radio" name="goal" value="Не знаю (Нужен ваш совет)"><span class="form-group-list__checkmark form-group-list__checkmark--circle-shape"></span>Не знаю (Нужен ваш совет)</label>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
 
-          <fieldset class="form__group form-group">
-            <h2 class="form-group__title visually-hidden">Цель программы</h2>
-            <ul class="form-group__list form-group-list">
-              <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input" type="radio" name="goal" value="Похудение">Похудение</label>
-              </li>
-              <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input" type="radio" name="goal" value="Набор массы">Набор массы</label>
-              </li>
-              <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input" type="radio" name="goal" value="Не знаю (Нужен ваш совет)">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form_group form-group">
+          <fieldset class="form__group form-group form__group--change-layout">
             <h2 class="form-group__title title">Контактные данные (владельца кота)</h2>
             <ul class="form-group__list form-group-list">
               <li class="form-group-list__item"><label class="form-group-list__title">E-mail:*<input class="form-group-list__input" type="email" name="email"></label></li>
@@ -65,41 +65,43 @@
           </fieldset>
 
           <fieldset class="form__group form-group">
-            <h2 class="form-group_title title">Комментарий</h2>
-            <textarea class="form-group-list__input" name="comment">Расскажите обо всех повадках кота</textarea>
+            <h2 class="form-group__title title">Комментарий</h2>
+            <textarea class="form-group-list__input-comment" name="comment">Расскажите обо всех повадках кота</textarea>
           </fieldset>
 
-          <fieldset class="form__group form-group">
-            <h2 class="form-group__title title">Дополнительно</h2>
+          <fieldset class="form__group form-group form__group--row-layout">
+            <h2 class="form-group__title title form-group__title--margin-less">Дополнительно</h2>
             <ul class="form-group__list form-group-list">
               <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input" type="checkbox" name="sweetener" value="Сахарозаменитель">Сахарозаменитель</label>
+                <label class="form-group-list__title"><input class="form-group-list__check" type="checkbox" name="sweetener" value="Сахарозаменитель"><span class="form-group-list__checkmark"></span>Сахарозаменитель</label>
               </li>
               <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input" type="checkbox" name="water" value="Питьевая вода">Питьевая вода</label>
+                <label class="form-group-list__title"><input class="form-group-list__check" type="checkbox" name="water" value="Питьевая вода"><span class="form-group-list__checkmark"></span>Питьевая вода</label>
               </li>
               <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input" type="checkbox" name="milk" value="Молоко">Молоко</label>
+                <label class="form-group-list__title"><input class="form-group-list__check" type="checkbox" name="milk" value="Молоко"><span class="form-group-list__checkmark"></span>Молоко</label>
               </li>
               <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__input"  type="checkbox" name="vitamins" value="Витамины">Витамины</label>
+                <label class="form-group-list__title"><input class="form-group-list__check"  type="checkbox" name="vitamins" value="Витамины"><span class="form-group-list__checkmark"></span>Витамины</label>
               </li>
             </ul>
           </fieldset>
-
-          <button class="form__link link" type="submit">Отправить заявку</button>
-          <p class="form__required">* — Обязательные поля</p>
+          <div class="form__wrapper">
+            <button class="form__link link" type="submit">Отправить заявку</button>
+            <p class="form__required">* — Обязательные поля</p>
+          </div>
         </form>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="container">
         <section class="footer__on-map on-map">
           <h2 class="on-map__title visually-hidden">Кэт Энерджи на карте</h2>
-          <div class="on-map__wrapper  on-map__wrapper--theme-light">
-            <p class="on-map__cooperation">приглашаем к сотрудничеству дилеров!</p>
-            <p class="on-map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="on-map__wrapper">
+            <div class="on-map__container container">
+              <p class="on-map__cooperation">приглашаем к сотрудничеству дилеров!</p>
+              <p class="on-map__address">ул. Большая <span class="on-map__wrap">Конюшенная, д. 19/8</span><span class="on-map__wrap">Санкт-Петербург</span></p>
+            </div>
           </div>
           <img class="on-map__img" src="https://via.placeholder.com/150x150" width="320" height="400" alt="Кэт Энерджи на карте">
         </section>
@@ -117,7 +119,6 @@
             <img class="made-by__logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип Html Academy">
           </a>
         </div>
-      </div>
     </footer>
   </body>
 </html>

@@ -7,13 +7,9 @@
 }
 
 .navigation__item {
-  padding: 22.5px 0;
+  padding: 22.5px 50px;
 
   border-top:1px solid $gray;
-
-  &:last-child {
-    border-bottom: 1px solid $gray;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -59,6 +55,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .navigation {
+    &--active-contrast .navigation__link--active {
+      &::before {
+        background: $green;
+      }
+    }
+  }
+
   .navigation__list {
     width: 488px;
   }

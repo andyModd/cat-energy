@@ -1,5 +1,50 @@
 .title {
+  position: relative;
+
   @include text(24px, 24px);
+  font-weight: 400;
   color: $black;
   text-align: left;
+
+  background: $white;
+
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    @include text(36px, 36px);
+  }
+}
+/*
+  &::after {
+    position: absolute;
+    top: calc(50% - 1.5px);
+    left: 0;
+
+
+    height: 3px;
+    width: 100vw;
+
+    content: '';
+    background: $green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    @include text(36px, 36px);
+
+    &::after {
+      left: -30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    &::after {
+      left: -40px;
+    }
+  }
+}
+*/

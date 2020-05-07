@@ -1,4 +1,41 @@
 .slider__button {
+  padding: 0;
+
   @include text(16px, 20px);
   color: $black;
+  text-transform: uppercase;
+
+  border: none;
+  background: transparent;
+}
+
+.slider__switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__track {
+  margin: 0 18px;
+}
+
+.slider__img {
+  margin-left: -20px;
+}
+
+@media(min-width: $tablet-width) {
+  .slider__img {
+    margin: 0;
+  }
+
+  .slider__track {
+    margin: 0 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__switch {
+    justify-content: flex-end;
+  }
 }

@@ -1,0 +1,57 @@
+.track {
+  width: 84px;
+  height: 14px;
+  padding: 3px 6px;
+  box-sizing: border-box;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  background: $white;
+}
+
+.track__thumb {
+  width: 35px;
+  height: 6px;
+
+  background: $green;
+  border-radius: 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .track {
+    position: relative;
+
+    width: 428px;
+    height: 6px;
+    padding: 0;
+
+    border-radius: 3px;
+    background: #dcdcdc;
+  }
+
+  .track__thumb {
+    position: absolute;
+    left: calc(50% - 17px);
+    top: -17px;
+
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $white;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+
+    &::before {
+      width: 8px;
+      height: 8px;
+
+      content: '';
+      border-radius: 50%;
+      background: $green;
+    }
+  }
+}

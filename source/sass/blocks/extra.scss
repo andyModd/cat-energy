@@ -1,3 +1,41 @@
 .extra__list {
   @include reset-list;
 }
+
+.extra__item {
+  padding: 15px 0;
+}
+
+.extra__title {
+  margin: 0;
+  margin-bottom: 30px;
+  width: 247px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .extra__list {
+    padding: 0;
+  }
+
+  .extra__title {
+    width: auto;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__list {
+    width: 895px;
+    margin-left: 0;
+  }
+
+  .extra__item {
+    padding: 15px 0 16px;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-left: none;
+    border-right: none;
+  }
+}

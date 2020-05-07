@@ -71,8 +71,8 @@
       margin-bottom: 90px;
     }
 
-    &:nth-child(n+3) {
-      margin-bottom: 55px;
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
     }
 
     &:nth-child(odd) {
@@ -102,6 +102,10 @@
 
 @media (min-width: $desktop-width) {
   .about-food__item {
+
+    &:nth-child(-n+4) {
+      margin-bottom: 0;
+    }
 
     &:not(:nth-child(4n+4)) {
       margin-right: 80px;
