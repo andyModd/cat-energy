@@ -14,6 +14,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: 6px;
 }
 
 .slider__track {
@@ -22,15 +23,35 @@
 
 .slider__img {
   margin-left: -20px;
+  margin-bottom: 30px;
+
+  vertical-align: middle;
+
+  &:last-of-type {
+    display: none;
+  }
 }
 
 @media(min-width: $tablet-width) {
   .slider__img {
     margin: 0;
+    margin-bottom: 25px;
+    width: 298px;
+    height: 512px;
   }
 
   .slider__track {
     margin: 0 21px;
+  }
+
+  .slider__button {
+    position: relative;
+
+    @include text(20px, 20px);
+  }
+
+  .slider__switch {
+    margin-left: 0;
   }
 }
 

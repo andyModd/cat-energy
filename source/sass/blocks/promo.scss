@@ -1,14 +1,16 @@
 .promo__subtitle {
   margin-top: 0;
+  margin-bottom: 23px;
 }
 
 .promo__container {
-  padding-top: 33px;
+  padding-top: 16px;
 }
 
 .promo__about {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
+  width: 266px;
 
   font-family: $secondary-font;
   text-align: left;
@@ -17,7 +19,6 @@
 .promo__result {
   @include flex(row);
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .promo__slider {
@@ -26,31 +27,37 @@
 
 @media (min-width: $tablet-width) {
   .promo__container {
-    padding-top: 50px;
+    padding-top: 44px;
   }
 
   .promo__about {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
+    width: 700px;
   }
 
   .promo__result {
-    margin-bottom: 255px;
+    margin-bottom: 87px;
     justify-content: flex-start;
     align-items: center;
   }
 
+  .promo__subtitle {
+    margin-bottom: 65px;
+  }
+
   .promo__slider {
-    padding-bottom: 75px;
+    padding-bottom: 72px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__about {
     width: 432px;
-    margin-bottom: -50px;
+    margin-bottom: -339px;
   }
 
   .promo__container {
+    padding-top: 0;
     padding-bottom: 75px;
   }
 
@@ -72,6 +79,7 @@
 
   .promo__subtitle {
     width: 570px;
-    margin-bottom: 142px;
+    margin-top: -7px;
+    margin-bottom: 147px;
   }
 }

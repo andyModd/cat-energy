@@ -19,11 +19,10 @@
   }
 
   .navigation__list {
-    width: 442px;
+    width: 440px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
   }
 
   .navigation__item {
@@ -31,6 +30,14 @@
 
     &:nth-child(n+1) {
       border: none;
+    }
+
+    &:nth-child(3n+1) {
+      margin-right: auto;
+    }
+
+    &:nth-child(3n+3) {
+      margin-left: 36px;
     }
   }
 
@@ -43,7 +50,9 @@
 
       &::before {
         position: absolute;
-        bottom: -5px;
+        bottom: -12px;
+        left: 2px;
+
         width: 100%;
         height: 2px;
 
@@ -64,13 +73,16 @@
   }
 
   .navigation__list {
-    width: 488px;
+    width: 479px;
   }
 
   .navigation__link {
     &--active {
 
       &::before {
+        bottom: -10px;
+        left: 0;
+
         background: $white;
       }
     }

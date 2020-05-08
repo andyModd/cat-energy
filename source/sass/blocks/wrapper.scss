@@ -1,6 +1,7 @@
 .wrapper {
   width: 124px;
   @include flex(column);
+  align-items: center;
   box-sizing: border-box;
 
   border-radius: 3px;
@@ -23,10 +24,11 @@
 
 .wrapper__paragraph {
   margin: 0;
-  margin-top: 17px;
-  margin-bottom: 7px;
+  margin-top: 13px;
+  margin-bottom: 8px;
   @include text(24px, 24px);
   color: $black;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,7 +37,11 @@
   }
 
   .wrapper__paragraph {
-    margin-bottom: 15px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    @include text(30px, 37px);
+
   }
 
   .wrapper__title {

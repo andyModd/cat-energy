@@ -1,12 +1,146 @@
 .food-types__item {
+  position: relative;
+
+  padding: 0 20px;
+  padding-top: 32px;
+  text-align: left;
+
+  background-color: $gray-light;
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: 22px;
+
+    width: 50px;
+    height: 51px;
+
+    border-radius: 50%;
+    background: $green;
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    top: 24px;
+    left: 30px;
+
+    width: 35px;
+    height: 49px;
+
+    background: url('../img/icon-cat-slim.svg');
+    content: '';
+
+  }
+
+  &--cat-pro {
+    &::after {
+      top: 36px;
+      left: 14px;
+
+      width: 67px;
+      height: 28px;
+
+      background: url('../img/icon-cat-pro.svg');
+    }
+  }
+
   &:not(:last-of-type) {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .food-types__item {
+    padding-top: 76px;
+    padding-left: 52px;
+    padding-right: 280px;
+    padding-bottom: 62px;
+
+    &::before {
+      top: 91px;
+      left: 446px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      top: 79px;
+      left: 475px;
+
+      width: 141px;
+      height: 194px;
+
+      background-size: 141px 194px;
+    }
+
+    &--cat-pro {
+
+      &::after {
+        top: 135px;
+        left: 412px;
+
+        width: 268px;
+        height: 113px;
+
+        background-size: 268px 113px;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 31px;
+    }
+
+    &:last-of-type {
+      padding-right: 315px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .food-types__item:not(:last-of-type) {
-    margin-bottom: 0;
-    margin-right: 80px;
+  .food-types__item {
+    box-sizing: border-box;
+    width: 570px;
+
+    &:nth-of-type(n+1) {
+      padding-right: 56px;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
+
+    &::before {
+      top: 47px;
+      left: 52px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      top: 42px;
+      left: 65px;
+
+      width: 71px;
+      height: 97px;
+
+      background-size: 71px 97px;
+    }
+
+    &--cat-pro {
+
+      &::after {
+        top: 70px;
+        left: 34px;
+
+        width: 134px;
+        height: 57px;
+
+        background-size: 134px 57px;
+      }
+    }
   }
 }
