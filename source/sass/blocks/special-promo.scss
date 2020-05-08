@@ -5,7 +5,12 @@
   justify-content: flex-end;
   align-items: center;
 
-  background: $green url('../img/gift-photo-mobile@1x.jpg') no-repeat center top;
+  background-color: $green;
+  background: url('../img/icon-gift.svg'),
+              url('../img/gift-photo-mobile@1x.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: 56px 61px, auto;
+  background-position: 50% 28%, 0;
 }
 
 .special-promo__about {

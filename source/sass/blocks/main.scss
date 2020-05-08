@@ -4,11 +4,15 @@
 
 .main__container {
   padding-bottom: 43px;
+
+  &--padding-bottom {
+    padding-bottom: 37px
+  }
 }
 
 .main__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .main__about-form {
@@ -32,7 +36,7 @@
 }
 
 .main__food-card-list {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .main__extra {
@@ -47,7 +51,7 @@
   }
 
   .main__title {
-    margin-bottom: 53px;
+    margin-bottom: 84px;
   }
 
   .main__container {

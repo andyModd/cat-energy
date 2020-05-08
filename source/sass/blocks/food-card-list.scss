@@ -8,7 +8,7 @@
 
 .food-card-list__food-card {
   @include full-width();
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,6 +21,8 @@
   .food-card-list__food-card {
     margin: 0;
     padding: 0 40px 40px;
+    padding-left: 37px;
+    padding-right: 35px;
 
     &:not(:nth-child(2n+2)) {
       margin-right: 60px;

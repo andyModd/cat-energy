@@ -6,7 +6,7 @@
   color: $black;
 
   &--theme-contrast {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
   }
 }
 
@@ -84,10 +84,6 @@
   display: none;
 }
 
-.header__link {
-  padding: 11px 0;
-}
-
 @media (min-width: $tablet-width) {
   .header {
     margin-bottom: 0;
@@ -98,7 +94,7 @@
     text-align: left;
 
     &--theme-contrast {
-      margin-bottom: 63px;
+      margin-bottom: 57px;
     }
   }
 

@@ -16,6 +16,9 @@
 
 .food-card__link {
   width: 100%;
+  padding: 10px 0;
+
+  @include text(16px, 20px);
 }
 
 .food-card__wrapper {
@@ -24,8 +27,8 @@
 }
 
 .food-card__name-link {
-  width: 74px;
-  margin-top: 24px;
+  width: 93px;
+  margin-top: 22px;
   margin-bottom: 10px;
 
   text-transform: uppercase;
@@ -44,7 +47,6 @@
   .food-card {
     @include flex(column);
     align-items: center;
-    justify-content: space-between;
     width: 324px;
     min-height: 478px;
 
@@ -73,22 +75,32 @@
     }
   }
 
+  .food-card__img {
+    margin-bottom: 38px;
+  }
+
   .food-card__wrapper {
     align-items: center;
     width: 100%;
+    margin-bottom: 29px;
   }
 
   .food-card__name-link {
     width: 140px;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
 
     text-align: center;
     @include text(20px, 20px);
   }
 
   .food-card__link {
+    width: 250px;
+  }
+
+  .food-card__info {
     width: 100%;
+    border-spacing: 0 12px;
   }
 }
 
@@ -101,6 +113,5 @@
         margin-left: -15px;
       }
     }
-
   }
 }

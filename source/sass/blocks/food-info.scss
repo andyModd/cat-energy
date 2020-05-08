@@ -15,10 +15,6 @@
 
 @media (min-width: $tablet-width) {
   .food-info {
-    width: 100%;
-
-    border-spacing: 0;
-
     @include  text(16px, 16px);
   }
 
