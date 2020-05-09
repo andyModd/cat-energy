@@ -40,10 +40,10 @@
 
 @media (min-width: $tablet-width) {
   .extra-card {
-    padding-left: 40px;
-    padding-right: 40px;
     width: auto;
     justify-content: flex-end;
+
+    @include text(20px, 20px);
 
     border-left: solid 1px #cdcdcd;
     border-right: solid 1px #cdcdcd;
@@ -52,14 +52,25 @@
   .extra-card__name {
     width: auto;
     margin-right: auto;
+    margin-bottom: 26px;
   }
 
   .extra-card__price {
+    margin: 0;
     margin-left: 52px;
+    margin-top: 5px;
+    @include text(16px, 20px);
+
+    &--margin-left {
+      margin-left: 60px;
+    }
   }
 
   .extra-card__amount {
+    margin: 0;
     margin-left: 200px;
+    margin-top: 5px;
+    @include text(16px, 20px);
   }
 }
 

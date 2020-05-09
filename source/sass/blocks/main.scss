@@ -46,8 +46,6 @@
 @media (min-width: $tablet-width) {
   .main {
     text-align: left;
-
-    background: $white;
   }
 
   .main__title {
@@ -56,6 +54,10 @@
 
   .main__container {
     padding-bottom: 57px;
+
+    &--padding-bottom {
+      padding-bottom: 75px;
+    }
   }
 
   .main__food-types {
@@ -82,6 +84,10 @@
   .main__extra {
     margin-bottom: 69px;
   }
+
+  .main__food-card-list {
+    margin-bottom: 66px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -91,6 +97,10 @@
 
   .main__container {
     padding-bottom: 90px;
+
+    &--padding-bottom {
+      padding-bottom: 86px;
+    }
   }
 
   .main__about-form {
@@ -121,6 +131,6 @@
   }
 
   .main__food-card-list {
-    margin-bottom: 79px;
+    margin-bottom: 77px;
   }
 }

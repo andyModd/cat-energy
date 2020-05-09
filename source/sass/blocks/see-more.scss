@@ -54,21 +54,33 @@
 
 @media (min-width: $tablet-width) {
   .see-more {
-    min-height:432px;
+    min-height: 432px;
     width: 324px;
-    padding: 0 40px 40px;
+    padding: 0 36px 40px;
 
     @include text(20px, 20px);
 
     border: 1px solid rgba(205,205,205,0.5);
+
+    &::before {
+      top: 53px;
+      left: 132px;
+      width: 61px;
+      height: 61px;
+
+      background: url('../img/icon-plus.svg');
+      background-size: 61px 61px;
+    }
   }
 
   .see-more__paragraph  {
-    margin-bottom: 28px;
+    width: 175px;
+    margin-bottom: 25px;
   }
 
   .see-more__info {
-    margin-bottom: 85px;
+    width: 225px;
+    margin-bottom: 82px;
 
     @include text(16px, 20px);
   }
@@ -79,5 +91,10 @@
     width: 245px;
 
     text-align: center;
+
+    &::before {
+      top: 56px;
+      left: 92px;
+    }
   }
 }
