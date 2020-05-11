@@ -63,7 +63,7 @@
 }
 
 .header__image {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 
   vertical-align: middle;
 }
@@ -82,6 +82,10 @@
 
 .header__navigation {
   display: none;
+}
+
+.header__link {
+  padding: 11px 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -105,8 +109,8 @@
 
   .header__title {
     width: 420px;
+    margin-bottom: 42px;
     padding-left: 87px;
-    margin-bottom: 40px;
 
     @include text(60px, 60px);
     color: $black;
@@ -126,7 +130,7 @@
   }
 
   .header__promo-container {
-    padding-top: 58px;
+    padding-top: 56px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -146,6 +150,8 @@
     z-index: 1;
 
     width: 245px;
+    padding: 16px 15px;
+    box-sizing: border-box;
     margin-left: 89px;
     margin-bottom: -79px;
 

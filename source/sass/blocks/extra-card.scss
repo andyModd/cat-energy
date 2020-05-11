@@ -36,6 +36,8 @@
 
 .extra-card__link {
   width: 100%;
+  box-sizing: border-box;
+  padding: 10px 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -96,6 +98,10 @@
   .extra-card__price {
     margin: 0;
     margin-right: 40px;
+
+    &--margin-left {
+      margin-right: 47px;
+    }
   }
 
   .extra-card__link {

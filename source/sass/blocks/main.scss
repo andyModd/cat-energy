@@ -4,10 +4,14 @@
 
 .main__container {
   padding-bottom: 43px;
+}
 
-  &--padding-bottom {
-    padding-bottom: 37px
-  }
+.main__c-container {
+  padding-bottom: 37px
+}
+
+.main__f-container {
+  padding-bottom: 35px;
 }
 
 .main__title {
@@ -15,10 +19,15 @@
   margin-bottom: 28px;
 }
 
+.main__f-title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
 .main__about-form {
   width: 228px;
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 40px;
   text-transform: uppercase;
   text-align: left;
 }
@@ -52,12 +61,20 @@
     margin-bottom: 84px;
   }
 
+  .main__f-title {
+    margin-bottom: 55px;
+  }
+
   .main__container {
     padding-bottom: 57px;
+  }
 
-    &--padding-bottom {
-      padding-bottom: 75px;
-    }
+  .main__c-container {
+    padding-bottom: 78px;
+  }
+
+  .main__f-container {
+    padding-bottom: 74px;
   }
 
   .main__food-types {
@@ -76,6 +93,7 @@
 
   .main__about-form {
     width: 325px;
+    margin-bottom: 65px;
     padding-left: 40px;
 
     @include text(20px, 30px);
@@ -97,10 +115,14 @@
 
   .main__container {
     padding-bottom: 90px;
+  }
 
-    &--padding-bottom {
+  .main__f-container {
+    padding-bottom: 83px;
+  }
+
+  .main__c-container {
       padding-bottom: 86px;
-    }
   }
 
   .main__about-form {
@@ -117,7 +139,7 @@
   }
 
   .main__food-types {
-    margin-bottom: 78px;
+    margin-bottom: 75px;
     display: flex;
     flex-direction: row;
   }

@@ -5,13 +5,27 @@
 }
 
 .form-group__title {
+  width: 201px;
   margin: 0;
   margin-bottom: 30px;
+
+  &--less {
+    width: 142px;
+  }
+
+  &--more {
+    width: 164px;
+  }
 }
 
 
 @media (min-width: $tablet-width) {
+  .form-group {
+    @include text(20px, 20px);
+  }
+
   .form-group__title {
+    width: 553px;
     margin-bottom: 70px;
 
     &--margin-less {

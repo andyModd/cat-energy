@@ -12,21 +12,27 @@
   &--theme-gray {
     background-color: $button-gray;
     color: $black-lightest;
-    @include text (16px, 20px);
-    padding: 10px 0;
   }
 
-  &--small-size {
-  @include text (14px, 18px);
-  padding: 11px 0;
+  &--constant-size {
+    @include text(16px, 20px);
   }
 
   &--medium-size {
-  @include text (16px, 20px);
-  padding: 10px 0;
+    @include text(16px, 20px);
   }
 }
 
 @media (min-width: $tablet-width) {
-  @include text(20px, 20px);
+  .link {
+    @include text(20px, 20px);
+
+    &--constant-size {
+      @include text(16px, 20px);
+    }
+
+    &--medium-size {
+      @include text(20px, 20px);
+    }
+  }
 }
