@@ -5,17 +5,8 @@
 }
 
 .form-group__title {
-  width: 201px;
   margin: 0;
   margin-bottom: 30px;
-
-  &--less {
-    width: 142px;
-  }
-
-  &--more {
-    width: 164px;
-  }
 }
 
 
@@ -25,11 +16,8 @@
   }
 
   .form-group__title {
-    width: 553px;
+    padding-left: 40px;
+    margin-left: -40px;
     margin-bottom: 70px;
-
-    &--margin-less {
-      margin-bottom: 53px;
-    }
   }
 }

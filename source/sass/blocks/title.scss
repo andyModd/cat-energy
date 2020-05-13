@@ -19,12 +19,24 @@
     background: $green;
   }
 
-    &--above {
-      &::before {
-        top: 50%;
-      }
-    }
+  &--theme-one {
+    width: 181px;
+    padding-right: 20px;
 
+    &::before {
+      top: 30%;
+    }
+  }
+
+  &--theme-two {
+    width: 119px;
+    padding-right: 23px;
+  }
+
+  &--theme-three {
+    width: 140px;
+    padding-right: 24px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -35,10 +47,23 @@
       left: -30px;
     }
 
-    &--more-left {
+    &--theme-one {
+      width: 528px;
+      padding-right: 20px;
+
       &::before {
-        left: -60px;
+        top: 60%;
       }
+    }
+
+    &--theme-two {
+      width: 180px;
+      padding-right: 39px;
+    }
+
+    &--theme-three {
+      width: 214px;
+      padding-right: 38px;
     }
   }
 }
@@ -46,7 +71,7 @@
 @media (min-width: $desktop-width) {
   .title {
     &::before {
-      left: -40px;
+      left: -70px;
     }
   }
 }

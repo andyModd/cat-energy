@@ -10,6 +10,7 @@
 
 .form-group-list__input {
   padding: 15px;
+  padding-right: 33px;
   height: 45px;
   width: 100px;
   flex-grow: 1;
@@ -21,6 +22,20 @@
   text-transform: uppercase;
 
   border: 1px solid #cdcdcd;
+
+  &--theme-email {
+    background: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 14px;
+    background-position: 93% 50%;
+  }
+
+  &--theme-tel {
+    background: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    background-position: 93% 50%;
+  }
 }
 
 .form-group-list__input-comment {
@@ -105,7 +120,23 @@
   .form-group-list__input {
     height: 52px;
     padding: 17px 20px;
+    padding-right: 37px;
     margin-left: 18px;
+
+    &--theme-email {
+      background: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-size: 18px 14px;
+      background-position: 96% 50%;
+      }
+
+    &--theme-tel {
+      background: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-size: 21px 21px;
+      background-position: 97% 50%;
+    }
+
   }
 
   .form-group-list__item {

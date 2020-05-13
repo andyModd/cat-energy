@@ -30,7 +30,10 @@
 }
 
 .on-map__img {
-  margin-left: -20px;
+  width: 100vw;
+  position: relative;
+  top:0;
+  right: calc(50vw - 50%);
 
   vertical-align: middle;
 }
@@ -57,6 +60,8 @@
     &--full-width {
       margin-left: -30px;
       margin-right: -30px;
+      padding-left: 70px;
+      padding-right: 70px;
     }
   }
 
@@ -91,6 +96,7 @@
 
   .on-map__container {
     position: absolute;
+    z-index: 1;
     top: 95px;
 
     padding-left: 76px;
