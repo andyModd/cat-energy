@@ -23,6 +23,10 @@
   padding-top: 38px;
 }
 
+.footer__on-map {
+  min-height: 476px;
+}
+
 @media (min-width: $tablet-width) {
   .footer__wrapper {
     display: flex;
@@ -46,13 +50,18 @@
     min-width: 162px;
   }
 
-  .footer__container {
-    position: relative;
+  .footer__on-map {
+    min-height: 601px;
   }
+
 }
 
 @media (min-width: $desktop-width) {
   .footer__wrapper {
     padding-top: 58px;
+  }
+
+  .footer__on-map {
+  min-height: 400px;
   }
 }

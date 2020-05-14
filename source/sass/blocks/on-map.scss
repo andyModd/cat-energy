@@ -30,12 +30,9 @@
 }
 
 .on-map__img {
+  position: absolute;
   width: 100vw;
-  position: relative;
-  top:0;
-  right: calc(50vw - 50%);
-
-  vertical-align: middle;
+  left: calc(50% - 50vw);
 }
 
 .on-map__container {
