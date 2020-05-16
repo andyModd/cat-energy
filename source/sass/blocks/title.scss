@@ -1,6 +1,5 @@
 .title {
   position: relative;
-
   @include text(24px, 24px);
   font-weight: 400;
   color: $black;
@@ -8,22 +7,14 @@
 
   background: $white;
 
-}
-
-@media (min-width: $tablet-width) {
-  .title {
-    @include text(36px, 36px);
-  }
-}
-/*
-  &::after {
+  &::before {
     position: absolute;
-    top: calc(50% - 1.5px);
-    left: 0;
-
+    z-index: -1;
+    top: 14px;
+    left: -50vw;
 
     height: 3px;
-    width: 100vw;
+    width: 200vw;
 
     content: '';
     background: $green;
@@ -34,17 +25,8 @@
   .title {
     @include text(36px, 36px);
 
-    &::after {
-      left: -30px;
+    &::before {
+      top: 23px;
     }
   }
 }
-
-@media (min-width: $desktop-width) {
-  .title {
-    &::after {
-      left: -40px;
-    }
-  }
-}
-*/

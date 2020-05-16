@@ -1,26 +1,41 @@
 .main {
   text-align: center;
+
+  overflow: hidden;
 }
 
 .main__container {
-  padding-bottom: 34px;
+  padding-bottom: 43px;
+}
+
+.main__c-container {
+  padding-bottom: 37px
+}
+
+.main__f-container {
+  padding-bottom: 35px;
 }
 
 .main__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
+}
+
+.main__f-title {
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .main__about-form {
   width: 228px;
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 40px;
   text-transform: uppercase;
   text-align: left;
 }
 
 .main__food-types {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .main__image {
@@ -32,7 +47,7 @@
 }
 
 .main__food-card-list {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .main__extra {
@@ -42,20 +57,30 @@
 @media (min-width: $tablet-width) {
   .main {
     text-align: left;
-
-    background: $white;
   }
 
   .main__title {
-    margin-bottom: 53px;
+    margin-bottom: 84px;
+  }
+
+  .main__f-title {
+    margin-bottom: 55px;
   }
 
   .main__container {
-    padding-bottom: 72px;
+    padding-bottom: 57px;
+  }
+
+  .main__c-container {
+    padding-bottom: 78px;
+  }
+
+  .main__f-container {
+    padding-bottom: 74px;
   }
 
   .main__food-types {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   .main__catalog-title {
@@ -70,6 +95,7 @@
 
   .main__about-form {
     width: 325px;
+    margin-bottom: 65px;
     padding-left: 40px;
 
     @include text(20px, 30px);
@@ -77,6 +103,10 @@
 
   .main__extra {
     margin-bottom: 69px;
+  }
+
+  .main__food-card-list {
+    margin-bottom: 66px;
   }
 }
 
@@ -87,6 +117,14 @@
 
   .main__container {
     padding-bottom: 90px;
+  }
+
+  .main__f-container {
+    padding-bottom: 83px;
+  }
+
+  .main__c-container {
+      padding-bottom: 86px;
   }
 
   .main__about-form {
@@ -103,6 +141,7 @@
   }
 
   .main__food-types {
+    margin-bottom: 75px;
     display: flex;
     flex-direction: row;
   }
@@ -116,6 +155,6 @@
   }
 
   .main__food-card-list {
-    margin-bottom: 79px;
+    margin-bottom: 77px;
   }
 }

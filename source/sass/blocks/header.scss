@@ -6,7 +6,7 @@
   color: $black;
 
   &--theme-contrast {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
   }
 }
 
@@ -18,7 +18,7 @@
 
 .header__title {
   margin-top: 0;
-  margin-bottom: 19px;
+  margin-bottom: 25px;
 
   @include text(36px, 36px);
   font-weight: 400;
@@ -38,7 +38,7 @@
 .header__wrapper{
   padding: 0 20px;
   padding-top: 11px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,7 +50,7 @@
 }
 
 .header__promo-container {
-  padding-top: 30px;
+  padding-top: 27px;
 
   background-image: url('../img/index-background-mobile@1x.jpg');
   background-position: 50% 0%;
@@ -63,7 +63,7 @@
 }
 
 .header__image {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 
   vertical-align: middle;
 }
@@ -80,6 +80,14 @@
   outline: 1px solid black;
 }
 
+.header__navigation {
+  display: none;
+}
+
+.header__link {
+  padding: 11px 40px;
+}
+
 @media (min-width: $tablet-width) {
   .header {
     margin-bottom: 0;
@@ -90,22 +98,19 @@
     text-align: left;
 
     &--theme-contrast {
-      margin-bottom: 63px;
+      margin-bottom: 57px;
     }
   }
 
-  .header__container {
-    padding: 0 30px;
-    width: 708px;
-    margin: auto;
-
-    border: none;
+  .header__logo-img {
+    width: 174px;
+    height: 59px;
   }
 
   .header__title {
     width: 420px;
-    padding-left: 90px;
-    margin-bottom: 33px;
+    margin-bottom: 42px;
+    padding-left: 87px;
 
     @include text(60px, 60px);
     color: $black;
@@ -113,8 +118,8 @@
 
   .header__slogan {
 
-    padding-left: 90px;
-    margin-bottom: 40px;
+    padding-left: 88px;
+    margin-bottom: 48px;
 
     @include text(20px, 20px);
     color: $black;
@@ -125,7 +130,7 @@
   }
 
   .header__promo-container {
-    padding-top: 60px;
+    padding-top: 56px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -135,28 +140,46 @@
     background: transparent;
   }
 
+  .header__navigation {
+    display: block;
+    margin-top: 20px;
+  }
+
   .header__link {
     position: relative;
     z-index: 1;
 
     width: 245px;
-    margin-left: 90px;
-    margin-bottom: -60px;
+    padding: 16px 15px;
+    box-sizing: border-box;
+    margin-left: 89px;
+    margin-bottom: -79px;
+
+    &--resize {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      @include text(20px, 20px);
+    }
   }
 
   .header__image {
+    margin-bottom: 0;
     width: 709px;
     height: 609px;
     order: 1;
   }
 
   .header__container {
+    padding: 0 30px;
     padding-top: 24px;
-
+    width: 708px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+
+    border: none;
   }
 
   .header__wrapper {
@@ -175,12 +198,12 @@
       color: $white;
 
       background-image: url('../img/index-background-desktop@1x.jpg'),
-                        linear-gradient(to right, $white 50%, $green-dark 50%);
+                        linear-gradient(to right, $white 44.6%, $green-dark 40%);
       background-position: 100% 0%;
       background-repeat: no-repeat;
 
       &--theme-contrast {
-        margin-bottom: 81px;
+        margin-bottom: 75px;
 
         color: $black;
 
@@ -190,12 +213,18 @@
 
     .header__container {
       padding: 0 40px;
+      padding-top: 53px;
       width: 1220px;
       margin: auto;
     }
 
+    .header__navigation {
+      margin-top: 20px;
+    }
+
     .header__promo-container {
-      height: 579px;
+      height: 552px;
+      padding-top: 30px;
     }
 
     .header__link {
@@ -209,13 +238,18 @@
     }
 
   .header__title {
-    margin-top: 84px;
+    margin-top: 79px;
+    margin-bottom: 42px;
+    padding-left: 80px;
+  }
+
+  .header__slogan {
+    padding-left: 81px;
+    margin-bottom: 52px;
   }
 
   .header__logo-img {
-    &--resize {
-      width: 174px;
-      height: 58px;
-    }
+    width: 203px;
+    height: 60px;
   }
 }

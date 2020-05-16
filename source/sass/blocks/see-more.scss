@@ -1,4 +1,6 @@
 .see-more {
+  position: relative;
+
   @include flex(column);
   justify-content: flex-end;
   align-items: center;
@@ -13,19 +15,33 @@
   color: $black;
   text-align: center;
 
+  background-size: 31px 31px;
   border-bottom: 1px solid #ededed;
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: 145px;
+
+    width: 31px;
+    height: 31px;
+
+    content: '';
+    opacity: 0.2;
+    background: url('../img/icon-plus-mobile.svg') no-repeat;
+  }
 }
 
 .see-more__paragraph {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 8px;
 
   text-transform: uppercase;
 }
 
 .see-more__info {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   font-family: $secondary-font;
   @include text(12px, 16px);
@@ -34,29 +50,42 @@
 
 .see-more__link {
   width: 100%;
+  padding: 10px 40px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .see-more {
-    min-height:432px;
+    min-height: 432px;
     width: 324px;
-    padding: 0 40px 40px;
+    padding: 0 36px 40px;
 
     @include text(20px, 20px);
 
     border: 1px solid rgba(205,205,205,0.5);
+
+    &::before {
+      top: 53px;
+      left: 132px;
+      width: 61px;
+      height: 61px;
+
+      background: url('../img/icon-plus.svg');
+      background-size: 61px 61px;
+    }
   }
 
   .see-more__paragraph  {
-    margin-bottom: 28px;
+    width: 175px;
+    margin-bottom: 25px;
   }
 
   .see-more__info {
-    margin-bottom: 85px;
+    width: 225px;
+    margin-bottom: 82px;
 
     @include text(16px, 20px);
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -64,5 +93,10 @@
     width: 245px;
 
     text-align: center;
+
+    &::before {
+      top: 56px;
+      left: 92px;
+    }
   }
 }

@@ -9,10 +9,12 @@
 }
 
 .form-group-list__input {
-  flex-grow: 1;
   padding: 15px;
-  margin-left: 15px;
+  padding-right: 33px;
   height: 45px;
+  width: 100px;
+  flex-grow: 1;
+  margin-left: 15px;
   box-sizing: border-box;
 
   @include text(16px, 18px);
@@ -20,13 +22,30 @@
   text-transform: uppercase;
 
   border: 1px solid #cdcdcd;
+
+  &--theme-email {
+    background: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 14px;
+    background-position: 93% 50%;
+  }
+
+  &--theme-tel {
+    background: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 21px 21px;
+    background-position: 93% 50%;
+  }
 }
 
 .form-group-list__input-comment {
   width: 100%;
   min-height: 150px;
   box-sizing: border-box;
-  padding: 15px;
+  padding-bottom: 15px;
+  padding-right: 12px;
+  padding-left: 14px;
+  padding-top: 12px;
 
   @include text(16px, 18px);
   font-weight: 400;
@@ -70,12 +89,10 @@
   display: none;
 
   &:checked + .form-group-list__radiomark {
-
   }
 }
 .form-group-list__title {
-  display: flex;
-  flex-direction: row;
+  @include flex(row);
   align-items: center;
 
   color: $black-light;
@@ -84,22 +101,47 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-group-list__checkmark {
+    width: 40px;
+    height: 40px;
+    padding: 11px;
+    margin-right: 19px;
+  }
+
+  .form-group-list__input-comment {
+    padding-top: 9px;
+    padding-left: 18px;
+    padding-right: 12px;
+    min-height: 174px;
+
+    @include text(20px, 30px);
+  }
+
   .form-group-list__input {
     height: 52px;
     padding: 17px 20px;
+    padding-right: 37px;
+    margin-left: 18px;
+
+    &--theme-email {
+      background: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      background-size: 18px 14px;
+      background-position: 96% 50%;
+      }
+
+    &--theme-tel {
+      background: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-size: 21px 21px;
+      background-position: 97% 50%;
+    }
+
   }
 
   .form-group-list__item {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form-group-list__checkmark {
-    width: 40px;
-    height: 40px;
-    padding: 11px;
   }
 }

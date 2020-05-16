@@ -5,6 +5,7 @@
 
 .about-food__subtitle {
   margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .about-food__list {
@@ -59,6 +60,10 @@
     align-items: flex-start;
   }
 
+  .about-food__subtitle {
+    margin-bottom: 70px;
+  }
+
   .about-food__item {
     position: relative;
 
@@ -83,13 +88,13 @@
       width: 80px;
       height: 80px;
       margin-right: 0;
-      margin-bottom: 37px;
+      margin-bottom: 32px;
     }
 
     @for $i from 1 through 4 {
       &:nth-child(n+#{$i})::after {
           position: absolute;
-          left: 124px;
+          left: 111px;
           top: -38px;
           opacity: 0.1;
           font-family: $default-font;
@@ -97,10 +102,19 @@
           content: '#{$i}';
       }
     }
+
+    &:nth-child(1)::after {
+      left: 117px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .about-food__subtitle {
+    margin-top: -5px;
+    margin-bottom: 72px;
+  }
+
   .about-food__item {
 
     &:nth-child(-n+4) {

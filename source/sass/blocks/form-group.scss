@@ -5,17 +5,29 @@
 }
 
 .form-group__title {
+  display: inline-block;
+
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0;
+  margin-left: -20px;
   margin-bottom: 30px;
 }
 
 
 @media (min-width: $tablet-width) {
-  .form-group__title {
-    margin-bottom: 70px;
+  .form-group {
+    @include text(20px, 20px);
+  }
 
-    &--margin-less {
-      margin-bottom: 53px;
-    }
+  .form-group__title {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+    margin-bottom: 70px;
+  }
+
+  .form-group__break {
+    display: none;
   }
 }

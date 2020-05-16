@@ -8,7 +8,7 @@
   display: block;
   width: 128px;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .footer__logo-img {
@@ -16,11 +16,18 @@
 }
 
 .footer__contacts {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .footer__wrapper {
-  padding-top: 40px;
+  padding-top: 38px;
+}
+
+.footer__on-map {
+
+  &--theme-light {
+    background: $white;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -29,7 +36,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 58px;
+    padding-top: 53px;
     padding-bottom: 58px;
   }
 
@@ -44,5 +51,30 @@
 
   .footer__made-by {
     min-width: 162px;
+  }
+
+  .footer__on-map {
+    min-height: 601px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    padding-top: 58px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer__container {
+      position: relative;
+      width: 1220px;
+      margin: auto;
+
+    padding: 0 40px;
+  }
+
+  .footer__on-map {
+  min-height: 400px;
   }
 }
