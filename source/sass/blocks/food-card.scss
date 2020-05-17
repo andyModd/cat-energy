@@ -6,12 +6,6 @@
 
   @include text(16px, 20px);
   color: $black;
-
-  border-top: 1px solid #ededed;
-
-  &:last-of-type {
-    border-bottom: 1px solid #ededed;
-  }
 }
 
 .food-card__link {
@@ -51,10 +45,6 @@
     min-height: 513px;
 
     @include text(20px, 20px);
-
-    &:nth-of-type(n+1){
-      border: none;
-    }
 
     background: linear-gradient($white 81px, $gray 81px);
 

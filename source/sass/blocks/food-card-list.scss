@@ -9,6 +9,12 @@
 .food-card-list__food-card {
   @include full-width();
   padding-bottom: 24px;
+
+  border-top: $border-food-card;
+
+  &:last-child {
+    border-bottom: $border-food-card;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +30,8 @@
     padding-bottom: 41px;
     padding-left: 37px;
     padding-right: 35px;
+
+    border: none;
 
     &:not(:nth-child(2n+2)) {
       margin-right: 60px;

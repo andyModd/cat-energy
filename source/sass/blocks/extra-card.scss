@@ -8,10 +8,10 @@
   @include text(16px, 16px);
   color: $black-light;
 
-  border-top: 1px solid $gray-dark;
+  border-top: $border-extra-card;
 
   &:last-child {
-    border-bottom: 1px solid $gray-dark;
+    border-bottom: $border-extra-card;
   }
 
 }
