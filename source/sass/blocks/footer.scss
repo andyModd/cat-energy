@@ -17,10 +17,17 @@
 
 .footer__contacts {
   margin-bottom: 21px;
+  padding: 23px 0;
+  padding-bottom: 17px;
+  padding-left: 73px;
+  padding-right: 82px;
+
+  border-top: 1px solid $gray-dark;
+  border-bottom: 1px solid $gray-dark;
 }
 
 .footer__wrapper {
-  padding-top: 38px;
+  padding-top: 40px;
 }
 
 .footer__on-map {

@@ -62,9 +62,12 @@
   vertical-align: middle;
 }
 
-.header__image {
+.header__img {
+  display: block;
   margin-bottom: 4px;
+}
 
+.header__image {
   vertical-align: middle;
 }
 
@@ -153,20 +156,18 @@
     padding: 16px 15px;
     box-sizing: border-box;
     margin-left: 89px;
-    margin-bottom: -79px;
+    margin-bottom: -80px;
+  }
 
-    &--resize {
-      padding-top: 16px;
-      padding-bottom: 16px;
-      @include text(20px, 20px);
-    }
+  .header__img {
+    order: 1;
+    margin-bottom: 0;
   }
 
   .header__image {
-    margin-bottom: 0;
     width: 709px;
     height: 609px;
-    order: 1;
+
   }
 
   .header__container {
@@ -235,6 +236,10 @@
     .header__image {
       width: 552px;
       height: 499px;
+    }
+
+    .header__img {
+      margin-left: -50px;
     }
 
   .header__title {

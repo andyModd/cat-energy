@@ -17,16 +17,17 @@
   align-items: center;
 
   &::before {
-    margin-right: 20px;
+    margin-right: 16px;
     width: 60px;
     height: 60px;
     flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    content: '';
 
     background-color: $green;
-    content: url('../img/advantage-leaf@1x.png');
+    background-image: url('../img/advantage-leaf@1x.png');
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   &:not(:last-child) {
@@ -35,19 +36,19 @@
 
   &--theme-boil {
     &::before {
-      content: url('../img/advantage-powder@1x.png');
+      background-image: url('../img/advantage-powder@1x.png');
     }
   }
 
   &--theme-kitchen {
     &::before {
-      content: url('../img/advantage-dining@1x.png');
+      background-image: url('../img/advantage-dining@1x.png');
     }
   }
 
   &--theme-time {
     &::before {
-      content: url('../img/advantage-clock@1x.png');
+    background-image: url('../img/advantage-clock@1x.png');
     }
   }
 }
@@ -61,7 +62,7 @@
   }
 
   .about-food__subtitle {
-    margin-bottom: 70px;
+    margin-bottom: 73px;
   }
 
   .about-food__item {
@@ -89,6 +90,7 @@
       height: 80px;
       margin-right: 0;
       margin-bottom: 32px;
+      background-size: 50px 49px;
     }
 
     @for $i from 1 through 4 {
@@ -103,6 +105,30 @@
       }
     }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+    &::before {
+      background-image: url('../img/advantage-leaf@2x.png');
+    }
+
+    &--theme-boil {
+      &::before {
+        background-image: url('../img/advantage-powder@2x.png');
+      }
+    }
+
+    &--theme-kitchen {
+      &::before {
+        background-image: url('../img/advantage-dining@2x.png');
+      }
+    }
+
+    &--theme-time {
+      &::before {
+        background-image: url('../img/advantage-clock@2x.png');
+      }
+    }
+  }
     &:nth-child(1)::after {
       left: 117px;
     }
@@ -112,7 +138,7 @@
 @media (min-width: $desktop-width) {
   .about-food__subtitle {
     margin-top: -5px;
-    margin-bottom: 72px;
+    margin-bottom: 71px;
   }
 
   .about-food__item {

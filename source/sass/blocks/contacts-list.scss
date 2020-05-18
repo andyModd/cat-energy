@@ -1,12 +1,7 @@
 .contacts-list {
   @include reset-list;
-  padding: 25px 0;
-  padding-bottom: 19px;
-  display: flex;
-  flex-direction: row;
-
-  border-top: 1px solid $gray-dark;
-  border-bottom: 1px solid $gray-dark;
+  @include flex(row);
+  flex-wrap: wrap;
 }
 
 .contacts-list__item {
@@ -14,8 +9,9 @@
     margin-left: auto;
   }
 
-  &:not(:last-child) {
-    margin-right: 36px;
+  &:nth-child(3n+2) {
+    margin-left: 36px;
+    margin-right: 40px;
   }
 
   &:last-child {
