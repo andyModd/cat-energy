@@ -42,13 +42,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding-top: 53px;
     padding-bottom: 58px;
   }
 
   .footer__logo {
     margin: 0;
+    margin-right: 156px;
   }
 
   .footer__contacts {
@@ -57,11 +57,16 @@
   }
 
   .footer__made-by {
+    margin-left: auto;
     min-width: 162px;
   }
 
   .footer__on-map {
     min-height: 601px;
+  }
+
+  .footer__contacts {
+    border: none;
   }
 
 }

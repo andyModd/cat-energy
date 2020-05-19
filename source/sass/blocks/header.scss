@@ -56,6 +56,11 @@
   background-position: 50% 0%;
   background-repeat: no-repeat;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/index-background-mobile@2x.jpg');
+    background-size: 320px auto;
+  }
+
 }
 
 .header__logo-img {
@@ -202,6 +207,12 @@
                         linear-gradient(to right, $white 44.6%, $green-dark 40%);
       background-position: 100% 0%;
       background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../img/index-background-desktop@2x.jpg'),
+                          linear-gradient(to right, $white 44.6%, $green-dark 40%);
+        background-size: 720px auto, auto;
+      }
 
       &--theme-contrast {
         margin-bottom: 75px;

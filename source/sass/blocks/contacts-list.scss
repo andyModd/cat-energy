@@ -1,6 +1,7 @@
 .contacts-list {
   @include reset-list;
   @include flex(row);
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -19,8 +20,27 @@
   }
 }
 
+
 @media (min-width: $tablet-width) {
-  .contacts-list {
-    border: none;
+  .contacts-list__item {
+    &:nth-child(3n+2) {
+      margin-left: 28px;
+      margin-right: 29px;
+    }
+  }
+
+  .contacts__icon {
+    width: 30px;
+    height: 16px;
+
+    &--resize {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--wide {
+      width: 14px;
+      height: 28px;
+    }
   }
 }
