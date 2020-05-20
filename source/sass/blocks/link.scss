@@ -9,9 +9,27 @@
 
   background-color: $button-green;
 
+  &:hover {
+    background-color: $button-green--hover;
+  }
+
+  &:active {
+    background-color: $button-green--hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--theme-gray {
     background-color: $button-gray;
     color: $black-lightest;
+
+    &:hover {
+      background-color: $button-gray--hover;
+    }
+
+    &:active {
+      background-color: $button-gray--hover;
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 
   &--constant-size {
