@@ -24,28 +24,38 @@
   border: 1px solid rgba(205, 205, 205, 0.5);
 
   &--theme-tel {
-    background: url("../img/icon-phone.svg");
+    background: url('../img/icon-phone.svg');
     background-repeat: no-repeat;
     background-size: 21px 21px;
     background-position: 93% 50%;
   }
 
+  &::placeholder {
+    color: $black-lightest;
+    opacity: 1;
+  }
+
+  &:hover {
+    border: $border-input;
+  }
+
+  &:invalid {
+    outline: 2px solid $border-error;
+    outline-offset: -1px;
+    box-shadow: none;
+  }
+
   &:focus {
-    border: 2px solid $black-light;
+    outline: 2px solid $black;
   }
 
   &:focus + .form-group-list__icon {
     fill: $green;
   }
 
-  &:invalid {
-    border: solid 2px #ff8282;
-  }
-
   &:invalid + .form-group-list__icon {
     fill: #ff8282;
   }
-
 }
 
 .form-group-list__input-comment {
@@ -114,25 +124,12 @@
     cursor: pointer;
   }
 
-  &:active {
+  &--hover:active {
     opacity: 0.3;
   }
 
-  &:hover > .form-group-list__checkmark {
+  &--hover:hover > .form-group-list__checkmark {
     border: 1px solid #bababa;
-  }
-
-  &:active > .form-group-list__checkmark {
-    border: 1px solid $black-light;
-    opacity: 0.3;
-  }
-
-  &--hover-input:active {
-    opacity: 1;
-  }
-
-  &--hover-input:hover > .form-group-list__input {
-    border: 1px solid #cdcdcd;
   }
 }
 
@@ -167,7 +164,7 @@
     margin-left: 18px;
 
     &--theme-tel {
-      background: url("../img/icon-phone.svg");
+      background: url('../img/icon-phone.svg');
       background-repeat: no-repeat;
       background-size: 21px 21px;
       background-position: 97% 50%;

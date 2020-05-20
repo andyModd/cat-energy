@@ -11,6 +11,8 @@ $gray-dark: #dadada;
 $green: #68b738;
 $green-dark: #5eaa2f;
 
+$social-icons-color: #666666;
+
 $button-green: $green;
 $button-green--hover: $green-dark;
 
@@ -25,9 +27,11 @@ $nav-link-color--active: rgba(17, 17, 17, 0.6);
 $border-input: 1px solid #cdcdcd;
 $border-food-card: 1px solid #ededed;
 $border-extra-card: 1px solid #cccccc;
+$border-focus: $black-lightest;
+$border-error: #ff8282;
 
 $tablet-width: 768px;
 $desktop-width: 1300px;
 
 $retina-dpi: 144dpi;
-$retina-dppx: 2dppx;
+$retina-dppx: 1.5dppx;

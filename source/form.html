@@ -65,22 +65,48 @@
             <fieldset class="form__group form-group form__group--parameters">
               <h2 class="form-group__title visually-hidden">Информация о коте</h2>
               <ul class="form-group__list form-group-list">
-                  <li class="form-group-list__item"><label class="form-group-list__title form-group-list__title--hover-input">Имя:*<input  class="form-group-list__input" type="text" name="name" pattern="[a-zA-Z]+"></label></li>
-                <li class="form-group-list__item"><label class="form-group-list__title form-group-list__title--hover-input">Вес (кг):*<input  class="form-group-list__input" type="number" name="weight"></label></li>
-                <li class="form-group-list__item"><label class="form-group-list__title form-group-list__title--hover-input">Возраст (лет):<input  class="form-group-list__input" type="number" name="age"></label></li>
+                <li class="form-group-list__item">
+                  <label class="form-group-list__title">
+                    Имя:*
+                    <input  class="form-group-list__input" type="text" name="name" pattern="[a-zA-Z]+" placeholder="Барсик">
+                  </label>
+                </li>
+                <li class="form-group-list__item">
+                  <label class="form-group-list__title">
+                    Вес (кг):*
+                    <input  class="form-group-list__input" type="number" name="weight" placeholder="7">
+                  </label>
+                </li>
+                <li class="form-group-list__item">
+                  <label class="form-group-list__title">Возраст (лет):
+                    <input  class="form-group-list__input" type="number" name="age" placeholder="7">
+                  </label>
+                </li>
               </ul>
             </fieldset>
             <fieldset class="form__group form-group form__group--accent">
               <h2 class="form-group__title visually-hidden">Цель программы</h2>
                 <ul class="form-group__list form-group-list">
                   <li class="form-group-list__item">
-                    <label class="form-group-list__title"><input class="form-group-list__check" type="radio" name="goal" value="Похудение"><span class="form-group-list__checkmark form-group-list__checkmark--circle-shape"></span>Похудение</label>
+                    <label class="form-group-list__title form-group-list__title--hover">
+                      <input class="form-group-list__check" type="radio" name="goal" value="Похудение">
+                      <span class="form-group-list__checkmark form-group-list__checkmark--circle-shape"></span>
+                      Похудение
+                    </label>
                   </li>
                   <li class="form-group-list__item">
-                    <label class="form-group-list__title"><input class="form-group-list__check" type="radio" name="goal" value="Набор массы"><span class="form-group-list__checkmark form-group-list__checkmark--circle-shape"></span>Набор массы</label>
+                    <label class="form-group-list__title form-group-list__title--hover">
+                      <input class="form-group-list__check" type="radio" name="goal" value="Набор массы">
+                      <span class="form-group-list__checkmark form-group-list__checkmark--circle-shape"></span>
+                      Набор массы
+                    </label>
                   </li>
                   <li class="form-group-list__item">
-                    <label class="form-group-list__title"><input class="form-group-list__check" type="radio" name="goal" value="Не знаю (Нужен ваш совет)"><span class="form-group-list__checkmark form-group-list__checkmark--circle-shape"></span>Не знаю (Нужен ваш совет)</label>
+                    <label class="form-group-list__title form-group-list__title--hover">
+                      <input class="form-group-list__check" type="radio" name="goal" value="Не знаю (Нужен ваш совет)">
+                      <span class="form-group-list__checkmark form-group-list__checkmark--circle-shape"></span>
+                      Не знаю (Нужен ваш совет)
+                    </label>
                   </li>
                 </ul>
             </fieldset>
@@ -92,14 +118,14 @@
               <li class="form-group-list__item">
                 <label class="form-group-list__title form-group-list__title--hover-input">
                   E-mail:*
-                  <input class="form-group-list__input form-group-list__input--theme-email" type="email" name="email">
+                  <input class="form-group-list__input" type="email" name="email" placeholder="kuklachev@gmail.com">
                   <svg xmlns="http://www.w3.org/2000/svg" class="form-group-list__icon" viewBox="0 0 17 13" fill="#000000" width="18" height="14"><path d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z"/></svg>
                 </label>
               </li>
               <li class="form-group-list__item">
                 <label class="form-group-list__title form-group-list__title--hover-input">
                   Телефон:*
-                  <input class="form-group-list__input form-group-list__input--theme-tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                  <input class="form-group-list__input form-group-list__input--theme-tel" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="8 (960) 900-60-90">
                 </label>
               </li>
             </ul>
@@ -114,16 +140,32 @@
             <h2 class="form-group__title title title">Дополнительно</h2>
             <ul class="form-group__list form-group-list">
               <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__check" type="checkbox" name="sweetener" value="Сахарозаменитель"><span class="form-group-list__checkmark"></span>Сахарозаменитель</label>
+                <label class="form-group-list__title form-group-list__title--hover">
+                  <input class="form-group-list__check" type="checkbox" name="sweetener" value="Сахарозаменитель">
+                  <span class="form-group-list__checkmark"></span>
+                  Сахарозаменитель
+                </label>
               </li>
               <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__check" type="checkbox" name="water" value="Питьевая вода"><span class="form-group-list__checkmark"></span>Питьевая вода</label>
+                <label class="form-group-list__title form-group-list__title--hover">
+                  <input class="form-group-list__check" type="checkbox" name="water" value="Питьевая вода">
+                  <span class="form-group-list__checkmark"></span>
+                  Питьевая вода
+                </label>
               </li>
               <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__check" type="checkbox" name="milk" value="Молоко"><span class="form-group-list__checkmark"></span>Молоко</label>
+                <label class="form-group-list__title form-group-list__title--hover">
+                  <input class="form-group-list__check" type="checkbox" name="milk" value="Молоко">
+                  <span class="form-group-list__checkmark"></span>
+                  Молоко
+                </label>
               </li>
               <li class="form-group-list__item">
-                <label class="form-group-list__title"><input class="form-group-list__check"  type="checkbox" name="vitamins" value="Витамины"><span class="form-group-list__checkmark"></span>Витамины</label>
+                <label class="form-group-list__title form-group-list__title--hover">
+                  <input class="form-group-list__check"  type="checkbox" name="vitamins" value="Витамины">
+                  <span class="form-group-list__checkmark"></span>
+                  Витамины
+                </label>
               </li>
             </ul>
           </fieldset>
