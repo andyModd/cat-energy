@@ -45,7 +45,6 @@
   .navigation__link {
     display: block;
 
-
     &--active {
       position: relative;
 
@@ -59,6 +58,22 @@
 
         background: $green;
         content: '';
+      }
+    }
+
+    &:hover {
+      opacity: 0.6;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      &::before {
+        display: none;
       }
     }
   }

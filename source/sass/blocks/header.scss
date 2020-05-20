@@ -84,8 +84,7 @@
   font-size: 0;
 
   border: none;
-  background: transparent;
-  outline: 1px solid black;
+  background: url("../img/icon-mobile-menu.svg") no-repeat center;
 }
 
 .header__navigation {
@@ -94,6 +93,16 @@
 
 .header__link {
   padding: 11px 40px;
+}
+
+.header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {

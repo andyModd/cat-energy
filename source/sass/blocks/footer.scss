@@ -9,6 +9,14 @@
   width: 128px;
   margin: auto;
   margin-bottom: 31px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__logo-img {
@@ -76,6 +84,10 @@
     padding-top: 58px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .footer__logo {
+    margin-right: 412px;
   }
 
   .footer__container {

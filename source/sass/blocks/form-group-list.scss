@@ -21,14 +21,7 @@
   color: $black-lightest;
   text-transform: uppercase;
 
-  border: 1px solid #cdcdcd;
-
-  &--theme-email {
-    background: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-size: 18px 14px;
-    background-position: 93% 50%;
-  }
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   &--theme-tel {
     background: url("../img/icon-phone.svg");
@@ -85,19 +78,45 @@
   }
 }
 
-.form-group-list__radio {
-  display: none;
-
-  &:checked + .form-group-list__radiomark {
-  }
+.form-group-list__icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
+
 .form-group-list__title {
+  position: relative;
+
   @include flex(row);
   align-items: center;
 
   color: $black-light;
   text-transform: uppercase;
 
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover > .form-group-list__checkmark {
+    border: 1px solid #bababa;
+  }
+
+  &:active > .form-group-list__checkmark {
+    border: 1px solid $black-light;
+    opacity: 0.3;
+  }
+
+  &--hover-input:active {
+    opacity: 1;
+  }
+
+  &--hover-input:hover > .form-group-list__input {
+    border: 1px solid #cdcdcd;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -117,24 +136,40 @@
     @include text(20px, 30px);
   }
 
+
+  .form-group-list__icon {
+    position: absolute;
+    right: 19px;
+    top: 20px;
+  }
+
   .form-group-list__input {
     height: 52px;
     padding: 17px 20px;
     padding-right: 37px;
     margin-left: 18px;
 
-    &--theme-email {
-      background: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      background-size: 18px 14px;
-      background-position: 96% 50%;
-      }
-
     &--theme-tel {
       background: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       background-size: 21px 21px;
       background-position: 97% 50%;
+    }
+
+    &:focus {
+      border: 2px solid $black-light;
+    }
+
+    &:focus + .form-group-list__icon {
+      fill: $green;
+    }
+
+    &:required {
+      border: solid 2px #ff8282;
+    }
+
+    &:invalid + .form-group-list__icon {
+      fill: #ff8282;
     }
 
   }

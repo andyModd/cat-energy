@@ -6,6 +6,8 @@
 }
 
 .contacts-list__item {
+  color: #666666;
+
   &:first-child {
     margin-left: auto;
   }
@@ -18,8 +20,24 @@
   &:last-child {
     margin-right: auto;
   }
+
+  &:hover {
+    color: $green;
+  }
+
+  &:hover > .contacts__icon {
+    fill: currentcolor;
+  }
+
+  &:active {
+    color: $green;
+    opacity: 0.3;
+  }
 }
 
+.contacts__icon {
+  fill: currentcolor;
+}
 
 @media (min-width: $tablet-width) {
   .contacts-list__item {
