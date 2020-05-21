@@ -10,7 +10,7 @@
 .promo__about {
   margin: 0;
   margin-bottom: 25px;
-  width: 266px;
+  width: 275px;
 
   font-family: $secondary-font;
   text-align: left;
@@ -31,12 +31,12 @@
   }
 
   .promo__about {
-    margin-bottom: 52px;
+    margin-bottom: 55px;
     width: 700px;
   }
 
   .promo__result {
-    margin-bottom: 87px;
+    margin-bottom: 85px;
     justify-content: flex-start;
     align-items: center;
   }
@@ -46,14 +46,13 @@
   }
 
   .promo__slider {
-    padding-bottom: 72px;
+    padding-bottom: 74px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__about {
-    width: 432px;
-    margin-bottom: -339px;
+    width: 431px;
   }
 
   .promo__container {
@@ -64,6 +63,7 @@
   .promo__box {
     @include flex(row);
     align-items: flex-end;
+    margin-top: -411px;
   }
 
   .promo__slider {
@@ -79,7 +79,6 @@
 
   .promo__subtitle {
     width: 570px;
-    margin-top: -7px;
-    margin-bottom: 147px;
+    margin-bottom: 146px;
   }
 }

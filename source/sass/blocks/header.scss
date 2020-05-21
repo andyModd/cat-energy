@@ -56,15 +56,23 @@
   background-position: 50% 0%;
   background-repeat: no-repeat;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/index-background-mobile@2x.jpg');
+    background-size: 320px auto;
+  }
+
 }
 
 .header__logo-img {
   vertical-align: middle;
 }
 
-.header__image {
+.header__img {
+  display: block;
   margin-bottom: 4px;
+}
 
+.header__image {
   vertical-align: middle;
 }
 
@@ -76,8 +84,7 @@
   font-size: 0;
 
   border: none;
-  background: transparent;
-  outline: 1px solid black;
+  background: url('../img/icon-mobile-menu.svg') no-repeat center;
 }
 
 .header__navigation {
@@ -86,6 +93,16 @@
 
 .header__link {
   padding: 11px 40px;
+}
+
+.header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -153,20 +170,18 @@
     padding: 16px 15px;
     box-sizing: border-box;
     margin-left: 89px;
-    margin-bottom: -79px;
+    margin-bottom: -80px;
+  }
 
-    &--resize {
-      padding-top: 16px;
-      padding-bottom: 16px;
-      @include text(20px, 20px);
-    }
+  .header__img {
+    order: 1;
+    margin-bottom: 0;
   }
 
   .header__image {
-    margin-bottom: 0;
     width: 709px;
     height: 609px;
-    order: 1;
+
   }
 
   .header__container {
@@ -202,6 +217,12 @@
       background-position: 100% 0%;
       background-repeat: no-repeat;
 
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url('../img/index-background-desktop@2x.jpg'),
+                          linear-gradient(to right, $white 44.6%, $green-dark 40%);
+        background-size: 720px auto, auto;
+      }
+
       &--theme-contrast {
         margin-bottom: 75px;
 
@@ -235,6 +256,10 @@
     .header__image {
       width: 552px;
       height: 499px;
+    }
+
+    .header__img {
+      margin-left: -50px;
     }
 
   .header__title {

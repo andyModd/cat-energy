@@ -11,6 +11,14 @@
   background-repeat: no-repeat, no-repeat;
   background-size: 56px 61px, auto;
   background-position: 50% 28%, 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url('../img/icon-gift.svg'),
+                url('../img/gift-photo-mobile@2x.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 56px 61px, 280px auto;
+    background-position: 50% 28%, 0;
+  }
 }
 
 .special-promo__about {
@@ -37,6 +45,14 @@
     background-repeat: no-repeat;
     background-size: 56px 61px, auto;
     background-position: 14% 47%, 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url('../img/icon-gift.svg'),
+                  url('../img/gift-photo-tablet@2x.jpg');
+      background-repeat: no-repeat;
+      background-size: 56px 61px, 708px auto;
+      background-position: 14% 47%, 0;
+    }
   }
 
   .special-promo__about {
@@ -60,6 +76,14 @@
     background-repeat: no-repeat, no-repeat;
     background-size: 56px 61px, auto;
     background-position: 50% 28%, 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url('../img/icon-gift.svg'),
+                  url('../img/gift-photo-desktop@2x.jpg');
+      background-repeat: no-repeat, no-repeat;
+      background-size: 56px 61px, 245px auto;
+      background-position: 50% 28%, 0;
+    }
   }
 
   .special-promo__about {
