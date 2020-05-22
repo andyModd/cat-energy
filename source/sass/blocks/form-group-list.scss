@@ -24,15 +24,9 @@
   border: 1px solid rgba(205, 205, 205, 0.5);
   appearance: textfield;
 
-  &--theme-tel {
-    background: url('../img/icon-phone.svg');
-    background-repeat: no-repeat;
-    background-size: 21px 21px;
-    background-position: 93% 50%;
-  }
-
   &::placeholder {
     color: $black-lightest;
+    @include text(16px, 18px);
     opacity: 1;
   }
 
@@ -167,11 +161,9 @@
     padding-right: 37px;
     margin-left: 18px;
 
-    &--theme-tel {
-      background: url('../img/icon-phone.svg');
-      background-repeat: no-repeat;
-      background-size: 21px 21px;
-      background-position: 97% 50%;
+    &::placeholder {
+      color: $black-lightest;
+      @include text(20px, 20px);
     }
   }
 
