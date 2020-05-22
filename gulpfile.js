@@ -95,7 +95,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-gulp.task("refresh", function () {
+gulp.task("refresh", function (done) {
   server.reload();
   done();
 });

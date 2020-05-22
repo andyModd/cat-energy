@@ -91,7 +91,10 @@
 }
 
 .form-group-list__check {
-  display: none;
+
+  &:focus + .form-group-list__checkmark {
+    border: 1px solid $black;
+  }
 
   &:checked + .form-group-list__checkmark {
 
