@@ -6,6 +6,16 @@
   &:not(:last-child) {
     margin-bottom: 14px;
   }
+
+  &--accent {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &--row-layout {
+    margin-bottom: 10px;
+  }
 }
 
 .form-group-list__input {
@@ -23,6 +33,10 @@
 
   border: 1px solid rgba(205, 205, 205, 0.5);
   appearance: textfield;
+
+  &--change-layout {
+    margin-left: 10px;
+  }
 
   &::placeholder {
     color: $black-lightest;
@@ -151,6 +165,11 @@
 
     @include text(20px, 20px);
 
+
+    &--change-layout {
+      margin-left: 18px;
+    }
+
     &::placeholder {
       color: $black-lightest;
       @include text(20px, 20px);
@@ -160,6 +179,50 @@
   .form-group-list__item {
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+
+    &--row-layout {
+      width: 283px;
+
+      &:nth-child(odd) {
+        margin-right: 61px;
+      }
+
+      &:not(:nth-last-child(-n+2)) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &--accent {
+      &:not(:last-child) {
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group-list__item {
+
+    &--change-layout {
+      width: 570px;
+
+      &:not(:last-child) {
+        margin-right: 80px;
+        margin-bottom: 0;
+      }
+    }
+
+    &--row-layout {
+      width: 245px;
+
+      &:nth-child(n+1) {
+        margin-bottom: 0;
+      }
+
+      &:not(:nth-child(4n+4)) {
+        margin-right: 80px;
+      }
     }
   }
 }

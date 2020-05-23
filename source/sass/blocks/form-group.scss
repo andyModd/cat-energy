@@ -12,6 +12,14 @@
   margin: 0;
   margin-left: -20px;
   margin-bottom: 30px;
+
+  &--comment {
+    margin-bottom: 35px;
+  }
+
+  &--change-layout {
+    margin-bottom: 34px;
+  }
 }
 
 .form-group__input-comment {
@@ -42,6 +50,28 @@
     padding-right: 40px;
     margin-left: -40px;
     margin-bottom: 70px;
+
+    &--row-layout {
+      margin-bottom: 58px;
+    }
+
+    &--change-layout {
+      margin-bottom: 77px;
+    }
+
+    &--comment {
+      margin-bottom: 77px;
+    }
+  }
+
+  .form-group__list {
+
+    &--row-layout {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
   }
 
   .form-group__input-comment {
@@ -53,8 +83,25 @@
     @include text(20px, 30px);
   }
 
-
   .form-group__break {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group__list {
+    &--change-layout {
+      @include flex(row);
+    }
+
+    &--row-layout {
+      justify-content: flex-start;
+    }
+  }
+
+  .form-group__title {
+    &--row-layout {
+      margin-bottom: 58px;
+    }
   }
 }
