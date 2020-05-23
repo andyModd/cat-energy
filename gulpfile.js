@@ -9,7 +9,6 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var server = require("browser-sync").create();
-var jsmin = require('gulp-jsmin');
 
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
