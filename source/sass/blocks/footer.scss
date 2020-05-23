@@ -36,6 +36,7 @@
 
 .footer__wrapper {
   padding-top: 40px;
+  padding-bottom: 22px;
 }
 
 .footer__on-map {
@@ -92,14 +93,14 @@
   }
 
   .footer__container {
-      position: relative;
-      width: 1220px;
-      margin: auto;
+    position: relative;
 
+    width: 1220px;
+    margin: auto;
     padding: 0 40px;
   }
 
   .footer__on-map {
-  min-height: 400px;
+    min-height: 400px;
   }
 }

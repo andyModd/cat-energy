@@ -53,23 +53,6 @@
   }
 }
 
-.form-group-list__input-comment {
-  width: 100%;
-  min-height: 150px;
-  box-sizing: border-box;
-  padding-bottom: 15px;
-  padding-right: 12px;
-  padding-left: 14px;
-  padding-top: 12px;
-
-  @include text(16px, 18px);
-  font-weight: 400;
-  color: $black-lightest;
-  text-transform: uppercase;
-
-  border: 1px solid #cdcdcd;
-}
-
 .form-group-list__checkmark {
   width: 30px;
   height: 30px;
@@ -92,7 +75,7 @@
 
   &:checked + .form-group-list__checkmark {
 
-    background: url('../img/icon-tick.svg') no-repeat 50% 50%;
+    background: url("../img/icon-tick.svg") no-repeat 50% 50%;
     background-size: 17px 22px;
   }
 
@@ -135,19 +118,9 @@
   .form-group-list__checkmark {
     width: 40px;
     height: 40px;
-    padding: 11px;
+    padding: 10px;
     margin-right: 19px;
   }
-
-  .form-group-list__input-comment {
-    padding-top: 9px;
-    padding-left: 18px;
-    padding-right: 12px;
-    min-height: 174px;
-
-    @include text(20px, 30px);
-  }
-
 
   .form-group-list__icon {
     position: absolute;
@@ -155,11 +128,28 @@
     top: 20px;
   }
 
+  .form-group-list__check {
+
+    &:checked + .form-group-list__checkmark {
+
+      background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+      background-size: 21px auto;
+    }
+
+    &:checked + .form-group-list__checkmark--circle-theme {
+
+      background: $green;
+      background-clip: content-box;
+    }
+  }
+
   .form-group-list__input {
     height: 52px;
     padding: 17px 20px;
     padding-right: 37px;
     margin-left: 18px;
+
+    @include text(20px, 20px);
 
     &::placeholder {
       color: $black-lightest;

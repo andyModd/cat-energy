@@ -25,7 +25,7 @@
     color: $green;
   }
 
-  &:hover > .contacts__icon {
+  &:hover > .contacts-list__icon {
     fill: currentcolor;
   }
 
@@ -35,7 +35,7 @@
   }
 }
 
-.contacts__icon {
+.contacts-list__icon {
   fill: currentcolor;
 }
 
@@ -47,7 +47,7 @@
     }
   }
 
-  .contacts__icon {
+  .contacts-list__icon {
     width: 30px;
     height: 16px;
 

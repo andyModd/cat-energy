@@ -29,10 +29,13 @@
   @include text(14px, 20px);
 }
 
-.on-map__img {
+.on-map__iframe {
   width: 100%;
+  min-height: 363px;
 
   vertical-align: middle;
+
+  border: none;
 }
 
 .on-map__container {

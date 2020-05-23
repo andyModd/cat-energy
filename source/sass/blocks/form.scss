@@ -27,7 +27,7 @@
     margin-bottom: 28px;
   }
 
-  &--comment .form-group__title {
+  &--comment .form__group-title {
     margin-bottom: 35px;
   }
 
@@ -35,15 +35,15 @@
     margin-bottom: 28px;
   }
 
-  &--change-layout .form-group__title {
+  &--change-layout .form__group-title {
     margin-bottom: 34px;
   }
 
-  &--change-layout .form-group-list__input {
+  &--change-layout .form__input {
     margin-left: 10px;
   }
 
-  &--accent .form-group-list__item {
+  &--accent .form__item {
     &:not(:last-child) {
       margin-bottom: 13px;
     }
@@ -57,7 +57,7 @@
     margin-bottom: 24px;
   }
 
-  &--row-layout .form-group-list__item {
+  &--row-layout .form__item {
     margin-bottom: 10px;
   }
 }
@@ -87,18 +87,18 @@
       border: 1px solid #ededed;
     }
 
-    &--row-layout .form-group__title {
+    &--row-layout .form__group-title {
       margin-bottom: 58px;
     }
 
-    &--row-layout .form-group-list {
+    &--row-layout .form__group-list {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
       flex-wrap: wrap;
     }
 
-    &--row-layout .form-group-list__item {
+    &--row-layout .form__item {
       width: 283px;
 
       &:nth-child(odd) {
@@ -122,15 +122,15 @@
       margin-bottom: 64px;
     }
 
-    &--change-layout .form-group__title {
+    &--change-layout .form__group-title {
       margin-bottom: 77px;
     }
 
-    &--change-layout .form-group-list__input {
+    &--change-layout .form__input {
       margin-left: 18px;
     }
 
-    &--comment .form-group__title {
+    &--comment .form__group-title {
       margin-bottom: 77px;
     }
 
@@ -170,10 +170,10 @@
       margin-bottom: 66px;
     }
 
-    &--change-layout .form-group-list {
+    &--change-layout .form__group-list {
       @include flex(row);
     }
-    &--change-layout .form-group-list__item {
+    &--change-layout .form__item {
       width: 570px;
 
       &:not(:last-child) {
@@ -198,15 +198,15 @@
       margin-bottom: 61px;
     }
 
-    &--row-layout .form-group__title {
+    &--row-layout .form__group-title {
       margin-bottom: 58px;
     }
 
-    &--row-layout .form-group-list {
+    &--row-layout .form__group-list {
       justify-content: flex-start;
     }
 
-    &--row-layout .form-group-list__item {
+    &--row-layout .form__item {
       width: 245px;
 
       &:nth-child(n+1) {

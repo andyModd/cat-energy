@@ -17,7 +17,7 @@
 
     border-radius: 50%;
     background: $green;
-    content: '';
+    content: "";
   }
 
   &::after {
@@ -28,8 +28,8 @@
     width: 35px;
     height: 49px;
 
-    background: url('../img/icon-cat-slim.svg');
-    content: '';
+    background: url("../img/icon-cat-slim.svg");
+    content: "";
 
   }
 
@@ -41,7 +41,7 @@
       width: 67px;
       height: 28px;
 
-      background: url('../img/icon-cat-pro.svg');
+      background: url("../img/icon-cat-pro.svg");
     }
   }
 

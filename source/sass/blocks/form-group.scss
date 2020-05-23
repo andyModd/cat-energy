@@ -14,6 +14,23 @@
   margin-bottom: 30px;
 }
 
+.form-group__input-comment {
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+  padding-bottom: 15px;
+  padding-right: 12px;
+  padding-left: 14px;
+  padding-top: 12px;
+
+  @include text(16px, 18px);
+  font-weight: 400;
+  color: $black-lightest;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+}
+
 
 @media (min-width: $tablet-width) {
   .form-group {
@@ -26,6 +43,16 @@
     margin-left: -40px;
     margin-bottom: 70px;
   }
+
+  .form-group__input-comment {
+    padding-top: 9px;
+    padding-left: 18px;
+    padding-right: 12px;
+    min-height: 174px;
+
+    @include text(20px, 30px);
+  }
+
 
   .form-group__break {
     display: none;

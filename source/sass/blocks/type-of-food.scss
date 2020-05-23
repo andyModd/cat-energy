@@ -24,7 +24,7 @@
 
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 
-  background: url('../img/icon-right-arrow-long.svg') no-repeat 97px 15px;
+  background: url("../img/icon-right-arrow-long.svg") no-repeat 97px 15px;
   background-size: 24px 25px;
 
   &:hover {
@@ -54,7 +54,7 @@
     @include text(20px, 20px);
 
     border: none;
-    background: url('../img/icon-right-arrow-long.svg') no-repeat 132px;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 132px;
     background-size: 24px 25px;
   }
 }

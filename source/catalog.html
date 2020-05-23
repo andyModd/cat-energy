@@ -48,7 +48,8 @@
               <img class="header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип сайта Кэт Энерджи">
             </picture>
           </a>
-          <button class="header__menu-button" type="button">Открыть меню</button>
+          <!--Класс header__menu-button-toggle необходим для показа/сокрытия меню и изменения внешнего вида кнопки-->
+          <button class="header__menu-button header__menu-button-toggle" type="button">Открыть меню</button>
         </div>
 
         <nav class="header__navigation navigation navigation--active-contrast">
@@ -94,7 +95,7 @@
                   <td class="food-info__date">700 Р.</td>
                 </tr>
               </table>
-          </div>
+            </div>
             <a class="food-card__link link link--constant-size" href="">Заказать</a>
           </article>
           <article class="food-card-list__food-card food-card">
@@ -342,15 +343,7 @@
               <p class="on-map__cooperation">приглашаем<br>к сотрудничеству дилеров!</p>
               <p class="on-map__address">ул. Большая Конюшенная, д. 19/8<span class="on-map__wrap">Санкт-Петербург</span></p>
             </div>
-            <picture>
-              <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-
-              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-              <img class="on-map__img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Кэт Энерджи на карте">
-            </picture>
+            <iframe class="on-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.9750205566963!2d30.322076840808084!3d59.938765264719976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1586253181213!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0" aria-label="Интерактивная карта"></iframe>
         </section>
         <div class="footer__wrapper container">
           <a class="footer__logo">
@@ -359,23 +352,23 @@
           <ul class="footer__contacts contacts-list">
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="" aria-label="Vkontakte">
-                <svg class="contacts__icon" width="22" height="12"><use xlink:href="#icon-vk"></svg>
+                <svg class="contacts-list__icon" width="22" height="12"><use xlink:href="#icon-vk"></use></svg>
               </a>
             </li>
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="" aria-label="Instagram">
-                <svg class="contacts__icon contacts__icon--resize" width="17" height="17"><use xlink:href="#icon-insta"></svg>
+                <svg class="contacts-list__icon contacts-list__icon--resize" width="17" height="17"><use xlink:href="#icon-insta"></use></svg>
               </a>
             </li>
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="" aria-label="Facebook">
-                <svg class="contacts__icon contacts__icon--wide" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
+                <svg class="contacts-list__icon contacts-list__icon--wide" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
               </a>
             </li>
           </ul>
           <a class="footer__made-by made-by" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
-            <svg xmlns="http://www.w3.org/2000/svg" class="made-by__icon" width="27" height="34" viewBox="10 10 39 39" "=""><path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="made-by__icon" width="27" height="34" viewBox="10 10 39 39"><path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"></path></svg>
           </a>
         </div>
       </div>

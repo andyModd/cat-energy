@@ -10,10 +10,12 @@
 }
 
 .track__thumb {
+  display: block;
   width: 35px;
   height: 6px;
 
   background: $green;
+  border: none;
   border-radius: 6px;
 }
 
@@ -25,6 +27,7 @@
     height: 6px;
     padding: 0;
 
+    border: none;
     border-radius: 3px;
     background: #dcdcdc;
   }
@@ -49,7 +52,7 @@
       width: 8px;
       height: 8px;
 
-      content: '';
+      content: "";
       border-radius: 50%;
       background: $green;
     }
