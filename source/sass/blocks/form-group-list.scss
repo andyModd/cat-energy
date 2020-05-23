@@ -48,7 +48,7 @@
     border: $border-input;
   }
 
-  &:invalid {
+  &:invalid:not(:focus):not(:placeholder-shown) {
     outline: 2px solid $border-error;
     outline-offset: -1px;
     box-shadow: none;
@@ -62,7 +62,7 @@
     fill: $green;
   }
 
-  &:invalid + .form-group-list__icon {
+  &:invalid:not(:focus):not(:placeholder-shown) + .form-group-list__icon {
     fill: #ff8282;
   }
 }
@@ -140,6 +140,11 @@
     position: absolute;
     right: 19px;
     top: 20px;
+
+    &--direction {
+      top: 17px;
+      right: 18px;
+    }
   }
 
   .form-group-list__check {
