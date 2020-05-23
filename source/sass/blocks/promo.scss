@@ -22,7 +22,7 @@
 }
 
 .promo__slider {
-  padding-bottom: 38px;
+  padding-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,24 +46,25 @@
   }
 
   .promo__slider {
-    padding-bottom: 74px;
+    padding-bottom: 68px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__about {
     width: 431px;
+    margin-bottom: 49px;
   }
 
   .promo__container {
     padding-top: 0;
-    padding-bottom: 75px;
+    padding-bottom: 71px;
   }
 
   .promo__box {
     @include flex(row);
     align-items: flex-end;
-    margin-top: -411px;
+    margin-top: -405px;
   }
 
   .promo__slider {
