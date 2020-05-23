@@ -107,5 +107,5 @@ gulp.task("refresh", function (done) {
   gulp.watch("source/*.html", gulp.series("posthtml", "refresh"));
 });
 
-gulp.task("build", gulp.series("clean", "copy", "image", "webp" "css", "sprite", "posthtml"));
+gulp.task("build", gulp.series("clean", "copy", "image", "webp", "css", "sprite", "posthtml"));
 gulp.task("start", gulp.series("build", "server"));
