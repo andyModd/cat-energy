@@ -39,13 +39,17 @@
 @media (min-width: $tablet-width) {
   .food-card {
     @include flex(column);
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 324px;
     min-height: 513px;
 
     @include text(20px, 20px);
 
     background: linear-gradient($white 81px, $gray 81px);
+
+    &:nth-child(odd) .food-card__img-link {
+      margin-top: 36px;
+    }
 
     &:nth-of-type(odd) .food-card__img {
       height: 172px;

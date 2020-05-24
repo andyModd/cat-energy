@@ -51,6 +51,7 @@
   }
 
   &--menu-closed .header__menu-button {
+    display: block;
     background: url("../img/icon-mobile-menu.svg") no-repeat center;
   }
 }
@@ -279,7 +280,8 @@
 
     .header__img {
       position: absolute;
-      left: 494px;
+      left: 489px;
+      top: 29px;
     }
 
   .header__title {
