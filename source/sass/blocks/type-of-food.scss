@@ -27,7 +27,10 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 
   &:hover::after {
-    transform: scaleX(1.4);
+    width: 35px;
+    height: 12px;
+
+    content: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &::after {
